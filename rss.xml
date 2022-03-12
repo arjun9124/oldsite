@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="rss.css" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+<title>Your RSS Feed Title</title>
+<description>A brief description of your RSS feed.</description>
+<language>en-us</language>
+<link>http://yourwebsite.com/rss.xml</link>
+<atom:link href="http://yourwebsite.com/rss.xml" rel="self" type="application/rss+xml" />
+
+<!-- LB -->
+
+<item>
+<title>NEW POST! NOW USING NANO AS A EDITIOR</title>
+<guid>https://arjun9124.github.io/webpage/blog.html#new-post-now-using-nano-as-a-editior</guid>
+<pubDate>Wed, 09 Mar 2022 15:14:36 +0530</pubDate>
+<description><![CDATA[
+Okay from now on I will be using nano as a text editor. And that's pretty much all that I have to say. I fixed a lot of the HTML, copied some more from some more webpages. And now this is actually getting somewhere hopefully. 
+]]></description>
+</item>
+
+
+<item>
+<title>test post 2</title>
+<guid>https://lukesmith.xyz/2022.html#test-post-2</guid>
+<pubDate>Tue, 08 Mar 2022 09:19:14 +0530</pubDate>
+<description><![CDATA[
+this is the second test post, well the basic site is up now, not on the web atleast. but likned the blog and stuffz to it. aaj git pe daal dunga dekte hain kya hota  hai.
+]]></description>
+</item>
+
+
+<item>
+<title>Test Post: Chalja pls</title>
+<guid>https://lukesmith.xyz/2022.html#test-post-chalja-pls</guid>
+<pubDate>Mon, 07 Mar 2022 16:18:56 +0530</pubDate>
+<description><![CDATA[
+chalja pls vro pls pleaj thanku sary.
+]]></description>
+</item>
+
+
+<item>
+<title>Test Post: My first post using lb</title>
+<guid>https://lukesmith.xyz/2022.html#test-post-my-first-post-using-lb</guid>
+<pubDate>Mon, 07 Mar 2022 16:17:23 +0530</pubDate>
+<description><![CDATA[
+Hello this is my first post using lb, so It uses vim apparently. Nimbu ki shakti. Oh god I dont know how to save a file in vim. kya hoga ab mera. saale padh le jee ke liye. 
+]]></description>
+</item>
+
+
+</channel>
+</rss>
+
