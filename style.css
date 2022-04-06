@@ -29,8 +29,8 @@ a:hover {color: darkcyan; }
 /* The sidebar menu */
 .lbar {
   float: left;
-  height: 90%; /* Full-height: remove this if you want "auto" height */
-  /*width: 180px; /* Set the width of the sidebar */
+  /* height: 90%; /* Full-height: remove this if you want "auto" height */
+  width: 180px;	 /* Set the width of the sidebar */
   background-color: lightskyblue;
   border: dashed 2px;
   border-color:royalblue;
