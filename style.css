@@ -14,8 +14,7 @@ body {
 }
 
 .header {
-  margin: 15px 15px 15px 15px;
-  padding: 0px 20px;
+  padding: 0.7ex 0.7ex 0.7ex 2em;
   text-align:  left;
   border: dashed 2px;
   border-color: royalblue;
@@ -26,31 +25,38 @@ a {color: royalblue; }
 a:hover {color: darkcyan; }
 
 /* The sidebar menu */
-.lbar {
-  float: left;
-  height: 100%;
-  width: 180px;	 /* Set the width of the sidebar */
-  background-color: lightskyblue;
-  border: dashed 2px;
-  border-color:royalblue;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding:5px;
-  margin: 20px;
-}
-/* The navigation menu links */
-.lbar a {
-  padding: 16px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: black;
-  display: block;
-}
-
 /* When you mouse over the navigation links, change their color */
-.lbar a:hover {
+#nav a:hover {
   color: darkcyan;
 }
 
+#nav {
+	background-color: lightskyblue;
+	float: left;
+	margin: 20px 10px 10px 10px;
+	padding: 1em;
+}
+
+#nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+#nav li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#nav li ul {
+	padding-left: 0.6em !important;
+}
+
+#nav li a {
+	display: block;
+	margin: 0;
+	padding: 0.8ex 2em 0.8ex 1em;
+}
 /* Style page content */
 .main {
   padding: 10px 10px;
@@ -73,6 +79,9 @@ a:hover {color: darkcyan; }
 .bindex {
 }
 
-.footer{
+#footer{
   float: bottom;
+  margin: 1ex 1ex 1ex 1ex;
+  text-align: center;
 }
+
