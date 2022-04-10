@@ -35,6 +35,7 @@ a:hover {color: darkcyan; }
 	float: left;
 	margin: 20px 10px 10px 10px;
 	padding: 1em;
+	height: 100%;
 }
 
 #nav ul {
@@ -62,6 +63,18 @@ a:hover {color: darkcyan; }
   padding: 10px 10px;
   margin: 10px 10px 10px 10px;
 }
+
+
+#new{
+	width:500px;
+	height:150px;
+	margin: 20px 10px 10px 10px;
+	border: dashed 2px;
+	border-color: lightskyblue;
+	padding: 1em;
+	overflow:auto;
+}
+
 
 
 
