@@ -3,26 +3,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
 <channel>
-<title>Your RSS Feed Title</title>
-<description>A brief description of your RSS feed.</description>
+<title>Arjun9124's Blog Rss Feed</title>
+<description>My blog's RSS feed.</description>
 <language>en-us</language>
 <link>http://yourwebsite.com/rss.xml</link>
-<atom:link href="http://yourwebsite.com/rss.xml" rel="self" type="application/rss+xml" />
+<atom:link href="http://arjun9124.github.io/rss.xml" rel="self" type="application/rss+xml" />
 
 <!-- LB -->
-
-<item>
-<title>tit le le tit</title>
-<guid>https://arjun9124.github.io/website/blog.html#tit-le-le-tit</guid>
-<pubDate>Sat, 09 Apr 2022 17:15:50 +0530</pubDate>
-<description><![CDATA[
-tit le le tit
-]]></description>
-</item>
-
-
-
-
 <item>
 <title>Pixel Art is the true 'Digital Art' Form</title>
 <guid>https://arjun9124.github.io/website/blog.html#pixel-art-is-the-true-digital-art-form</guid>
