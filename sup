@@ -38,7 +38,7 @@ temp="$(mktemp)";
 trap 'rm -f "$temp"' 0 1 2 3 15	# Delete temp file after script termination.
 echo "
 <br><item>
-<h4><update>$update<update></h4>
+<strong><update>$update<update></strong>
 <br><sup><pubDate>$rssdate</pubDate></sup>
 </item><br>
 " > "$temp"
