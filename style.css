@@ -4,38 +4,67 @@ html {
 	margin-right: auto;
 	margin-top: 30px;
 	color: #333;
-	 }
+	background-image: url("bg1.png");
+	background-repeat: repeat-x;
+	background-position: right top;
+	background-attachment: fixed;
+
+}
+.header {
+
+	padding: 0.7ex 0.7ex 0.7ex 2em;
+	text-align:  left;
+	border: dashed 2px;
+	border-color: darkgoldenrod;
+	border-radius: 30px 30px 0px 0px;
+	border-bottom-style: none;
+	background: rgba(50,50,50,0.8);
+}
+
 
 body {
 	font-family: sans-serif;
 	/* background: linear-gradient(indigo, darkslategray) fixed ; */
-	background: powderblue ;
-	margin-bottom: 100px ;
+	/* background: powderblue ; */
+	margin-bottom: 30px ;
 }
 
-.header {
-  padding: 0.7ex 0.7ex 0.7ex 2em;
-  text-align:  left;
-  border: dashed 2px;
-  border-color: royalblue;
-  border-radius: 30px 30px 30px 30px;
+main {
+	background: rgba(50,50,50,0.7);
+	border: dashed 2px ;
+	border-color: darkgoldenrod;
+	border-top-style: none;
+	border-bottom-style: none;
+
 }
 
-a {color: royalblue; }
-a:hover {color: darkcyan; }
 
+
+h1, h2, h3 {color:lightgrey; }
+strong, sup {color: lightgrey;}
+p {color: lightgrey; }
+z {color: khaki;}
+a {color: darkkhaki; }
+a:hover {color: khaki; }
+
+/* #bloog h1, h2, h3, strong, sup{color: #333;}
 /* The sidebar menu */
 /* When you mouse over the navigation links, change their color */
 #nav a:hover {
-  color: darkcyan;
+  color: khaki;
 }
 
 #nav {
-	background-color: lightskyblue;
-	float: left;
+
+    float: left;
 	margin: 20px 10px 10px 10px;
 	padding: 1em;
 	height: 90%;
+	border: solid 2px;
+	border-left-style: none;
+	border-top-style: none;
+	border-bottom-style: none;
+	border-color: darkgoldenrod;
 }
 
 #nav ul {
@@ -94,7 +123,14 @@ a:hover {color: darkcyan; }
 
 #footer{
   float: bottom;
-  margin: 1ex 1ex 1ex 1ex;
   text-align: center;
+  background: rgba(50,50,50,0.7);
+  border: dashed 2px ;
+  border-top-style: none;
+  border-color: darkgoldenrod;
+  border-radius: 0px 0px 30px 30px;
+
+
 }
+
 

@@ -9,8 +9,14 @@
 #           _/ |
 #          |__/
 
-read -erp "kaunsa file ?:" updatefile
-read -erp "kya update kiya ?:" update
+
+echo welsome to arjuns mutilated frankestine sup
+read -erp "kaunsa file ?:
+" updatefile
+read -erp "kya update kiya ?:
+" update
+read -erp "marker bata (format <!-- mark -->) :
+" marker
 
 # You will want to change these variables to your needs.
 # In order to cleanly use sed on a multi-line file, we have to use `tr` to
@@ -24,7 +30,6 @@ replchar='^'
 # single byte character that isn't in the page like ~ or something.
 
 date="$(LC_TIME=en_US date '+%a, %d %b %Y %H:%M:%S %z')"
-
 # Eh, I'm a brainlet and I'm not sure how to elegantly add in the content to
 # the RSS feed without first writing it out to a file. This is because if we
 # tried run, say, a sed substitute command, we'd have to escape with \
@@ -42,6 +47,6 @@ echo "
 </item><br>
 " > "$temp"
 
-sed -i "/<!-- SUP -->/r $temp" "$updatefile"
+sed -i "/$marker/r $temp" "$updatefile"
 echo "ruk zara"
 echo "kar diya saale"
