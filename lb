@@ -10,7 +10,7 @@
 name="Arjun"
 webdir="$PWD"
 website="https://arjun9124.github.io/website/" # Keep a trailing slash.
-css="../style.css"
+css="../blog.css"
 blogfile="blog.html"
 indexfile="blogindex.html"
 rssfile="rss.xml"

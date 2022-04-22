@@ -18,7 +18,7 @@ html {
 	border-color: darkgoldenrod;
 	border-radius: 30px 30px 0px 0px;
 	border-bottom-style: none;
-	background: rgba(50,50,50,0.95);
+	background: rgba(50,50,50,0.9);
 }
 
 
@@ -30,7 +30,7 @@ body {
 }
 
 main {
-	background: rgba(50,50,50,0.95);
+	background: rgba(50,50,50,0.9);
 	border: dashed 2px ;
 	border-color: darkgoldenrod;
 	border-top-style: none;
@@ -62,12 +62,15 @@ a:hover {color: khaki; }
     float: left;
 	margin: 20px 10px 10px 10px;
 	padding: 1em;
-	height: 90%;
+	width: 125px;
+	height: 100%;
 	border: solid 2px;
 	border-left-style: none;
 	border-top-style: none;
 	border-bottom-style: none;
 	border-color: darkgoldenrod;
+	position: fixed;
+	overflow: auto;
 }
 
 #nav ul {
@@ -92,8 +95,8 @@ a:hover {color: khaki; }
 }
 /* Style page content */
 .main {
-  padding: 10px 10px;
-  margin: 10px 10px 10px 10px;
+	padding: 10px 10px;
+	margin: 10px 10px 10px 10px;
 }
 
 
@@ -108,7 +111,6 @@ a:hover {color: khaki; }
 }
 
 #mu {
-	float: right;
 	width:500px;
 	height:150px;
 	margin: 20px 10px 10px 10px;
@@ -122,13 +124,13 @@ a:hover {color: khaki; }
 /* ENTRY CSS */
 .entry {
 	border-left: 10px solid darkslategray;
-	padding: 0px 10px 0px 10px;
+	padding: 10px 10px 10px 10px;
 	border-radius: 0 30px 30px 0;
 	margin-bottom: 20px;
 	background-color: lightblue;
 	}
 
-.entry h2 { margin: 5px auto 2px auto; }
+.entry h2 { margin: 5px auto 2px auto; color: black;}
 
 .bindex {
 }
@@ -136,7 +138,7 @@ a:hover {color: khaki; }
 #footer{
   float: bottom;
   text-align: center;
-  background: rgba(50,50,50,0.95);
+  background: rgba(50,50,50,0.9);z
   border: dashed 2px ;
   border-top-style: none;
   border-color: darkgoldenrod;
@@ -145,4 +147,7 @@ a:hover {color: khaki; }
 
 }
 
+#spacer{
+	height: 170px;
+}
 
