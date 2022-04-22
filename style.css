@@ -60,7 +60,7 @@ a:hover {color: khaki; }
 #nav {
 
     float: left;
-	margin: 20px 10px 10px 10px;
+	margin: 20px 10px 10px 0px;
 	padding: 1em;
 	width: 125px;
 	height: 100%;
@@ -69,7 +69,6 @@ a:hover {color: khaki; }
 	border-top-style: none;
 	border-bottom-style: none;
 	border-color: darkgoldenrod;
-	position: fixed;
 	overflow: auto;
 }
 
