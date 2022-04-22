@@ -15,7 +15,7 @@ blogfile="blog.html"
 indexfile="blogindex.html"
 rssfile="rss.xml"
 archivefile="$webdir/blog/.htaccess"
-[ -z "$EDITOR" ] && EDITOR="kate"
+[ -z "$EDITOR" ] && EDITOR="nano"
 
 [ ! -d "$webdir/blog/.drafts" ] &&
 read -erp "Initialize blog in $webdir?" ask &&
