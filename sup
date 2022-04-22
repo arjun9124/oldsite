@@ -10,7 +10,7 @@
 #          |__/
 
 
-echo welcome to arjuns mutilated frankestine sup
+echo Arjuns modified, mutilated, frankensien sup.
 
 read -erp "kaunsa file ?:
     " updatefile

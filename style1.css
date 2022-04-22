@@ -68,7 +68,7 @@ a:hover {color: darkcyan; }
 #new {
 	float: left;
 	width:500px;
-	height:150px;
+	height:200px;
 	margin: 20px 10px 10px 10px;
 	border: dashed 2px;
 	border-color: lightskyblue;
@@ -79,7 +79,7 @@ a:hover {color: darkcyan; }
 #mu {
 	float: right;
 	width:500px;
-	height:150px;
+	height:200px;
 	margin: 20px 10px 10px 10px;
 	border: dashed 2px;
 	border-color: lightskyblue;
@@ -88,7 +88,7 @@ a:hover {color: darkcyan; }
 }
 
 #spacer {
-	height: 170px;
+	height: 220px;
 }
 
 
