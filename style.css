@@ -30,7 +30,7 @@ body {
 }
 
 main {
-	padding-bottom: 10px;
+	padding: 0px 10px 10px 10px;
 	background: rgba(50,50,50,0.9);
 	border: dashed 2px ;
 	border-color: darkgoldenrod;
@@ -65,11 +65,6 @@ a:hover {color: khaki; }
 	padding: 1em;
 	width: 125px;
 	height: 100%
-	border: solid 2px;
-	border-left-style: none;
-	border-top-style: none;
-	border-bottom-style: none;
-	border-color: darkgoldenrod;
 	overflow: auto;
 }
 
@@ -131,7 +126,7 @@ a:hover {color: khaki; }
 
 #vspacer {
 	height: 220px;
-	width: 20px;
+	width: 40px;
 }
 
 /* ENTRY CSS */
@@ -144,7 +139,10 @@ a:hover {color: khaki; }
 	background-color: lightblue;
 	}
 
-.entry h2 { margin: 5px auto 2px auto; }
+.entry h2 { margin: 5px auto 2px auto; color: 222222; }
+.entry a {color: midnightblue;}
+.entry a:hover {color: turquoise;}
+.entry strong {color:black;}
 
 .bindex {
 }
