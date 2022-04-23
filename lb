@@ -9,10 +9,11 @@
 #          |__/
 name="Arjun"
 webdir="$PWD"
-website="https://arjun9124.github.io/website/" # Keep a trailing slash.
+website="https://arjun9124.github.io/" # Keep a trailing slash.
 css="../blog.css"
 blogfile="blog.html"
 indexfile="blogindex.html"
+tagfile="tags.html"
 rssfile="rss.xml"
 archivefile="$webdir/blog/.htaccess"
 [ -z "$EDITOR" ] && EDITOR="nano"
@@ -29,8 +30,6 @@ fi
 
 newpost() { read -erp "Give a title for your post:
 	" title
-	read -erp "Give a tag for your post: 
-" tag
 	echo "$title" | grep -q "\"" && printf "Double quotation marks (\") are not allowed in entry titles.\\n" && exit
 	url="$(echo "$title" | iconv -cf UTF-8 -t ASCII//TRANSLIT | tr -d '[:punct:]' | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | sed "s/-\+/-/g;s/\(^-\|-\$\)//g")"
 	echo "AddDescription \"$title\" \"$url.html\"" >>  "$archivefile"|| { echo "Error: Is $archivefile writeable?"; exit; }
@@ -69,6 +68,17 @@ publish() { \
 	sed -i "/ \"$base.html\"/d" "$archivefile"
 	echo "AddDescription \"$realname\" \"$basefile\" #$rssdate" >> "$archivefile"
 	rm -f "$webdir/blog/.drafts/$chosen"
+	read -erp "Give a tag for your post:	"
+
+	tempo="$(mktemp)";
+	trap 'rm -f "$temp"' 0 1 2 3 15	# Delete temp file after script termination.
+	echo
+	"<li>%s &ndash; <a href=\"blog/%s\">%s</a></li>\\n" "$(date '+%Y %b %d')" "$basefile" "$realname" > "$tmpdir/index"
+	> "$tempo"
+
+	sed -i "/$tag/r $tempo" "$tagfile"
+	echo "ruk zara"
+	echo "kar diya saale"
 }
 
 confirm() { read -erp "Really $1 \"$base\"? (y/N) " choice && echo "$choice" | grep -qi "^y$" || exit 1 ;}
@@ -90,5 +100,6 @@ case "$1" in
 	t*) listandReturn "$webdir"/blog/.drafts/ trash && confirm trash && rm -f "$webdir/blog/.drafts/$chosen" && sed -i "/ \"$base.html\"/d" "$archivefile" ; printf "Draft deleted.\\n" ;;
 	d*) listandReturn "$webdir"/blog/ delete && confirm delete && delete && sed -i "/ \"$base.html\"/d" "$archivefile" ;;
 	r*) listandReturn "$webdir"/blog/ revise && revise ;;
-	*) printf "lb blog system by Luke Smith <luke@lukesmith.xyz>\\nUsage:\\n  lb n:\\tnew draft\\n  lb e:\\tedit draft\\n  lb p:\\tpublish/finalize draft\\n  lb r:\\trevise published entry\\n  lb t:\\tdiscard draft\\n  lb d:\\tdelete published entry\\n\\nBe sure to have the following pattern added to your RSS feed, blog file and blog index:\\n\\n<!-- LB -->\\n\\nNew content will be added directly below that sequence. This is required.\\nSee https://github.com/LukeSmithxyz/lb for more.\\n" ;;
+	*) printf "Custom Fork Of lb blog system by Arjun Dhama\\nUsage:\\n  lb n:\\tnew draft\\n  lb e:\\tedit draft\\n  lb p:\\tpublish/finalize draft\\n  lb r:\\trevise published entry\\n  lb t:\\tdiscard draft\\n  lb d:\\tdelete published entry\\n\\nBe sure to have the following pattern added to your RSS feed, blog file and blog index:\\n\\n<!-- LB -->\\n\\nNew content will be added directly below that sequence. This is required.\\nSee https://github.com/LukeSmithxyz/lb for more.\\n" ;;
 esac
+
