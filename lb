@@ -60,6 +60,13 @@ publish() { \
 	printf "\\n<item>\\n<title>%s</title>\\n<guid>%s%s#%s</guid>\\n<pubDate>%s</pubDate>\\n<description><![CDATA[\\n%s\\n]]></description>\\n</item>\\n\\n" "$realname" "$website" "$blogfile" "$base" "$rssdate" "$(cat "$webdir/blog/.drafts/$basefile")" >  "$tmpdir/rss"
 	printf "<div class='entry'>\\n<h2 id='%s'>%s</h2>\\n<small>[<a href='#%s'>link</a>&mdash;<a href='%s'>standalone</a>]</small>\\n%s\\n<small>%s</small>\\n</div>\\n" "$base" "$realname" "$base" "blog/$basefile" "$(cat "$webdir/blog/.drafts/$basefile")" "$webdate" > "$tmpdir/html"
 	# iske neeche se index entry wala syntax hai.
+	read -erp "Give a tag for your post:	"
+	tempo="$(mktemp)";
+	trap 'rm -f "$tempo"' 0 1 2 3 15	# Delete temp file after script termination.
+	printf "<li>%s &ndash; <a href=\"blog/%s\">%s</a></li>\\n" "$(date '+%Y %b %d')" "$tagfile" "$realname" > "$tempo"
+	sed -i "/$tag/r $tempo" "$tagfile"
+	echo "ruk zara"
+	echo "kar diya saale"
 	printf "<li>%s &ndash; <a href=\"blog/%s\">%s</a></li>\\n" "$(date '+%Y %b %d')" "$basefile" "$realname" > "$tmpdir/index"
 	# iske upar index entry wala syntax hai.
 	sed -i "/<!-- LB -->/r $tmpdir/html" "$blogfile"
@@ -67,18 +74,8 @@ publish() { \
 	sed -i "/<!-- LB -->/r $tmpdir/index" "$indexfile"
 	sed -i "/ \"$base.html\"/d" "$archivefile"
 	echo "AddDescription \"$realname\" \"$basefile\" #$rssdate" >> "$archivefile"
+
 	rm -f "$webdir/blog/.drafts/$chosen"
-	read -erp "Give a tag for your post:	"
-
-	tempo="$(mktemp)";
-	trap 'rm -f "$temp"' 0 1 2 3 15	# Delete temp file after script termination.
-	echo
-	"<li>%s &ndash; <a href=\"blog/%s\">%s</a></li>\\n" "$(date '+%Y %b %d')" "$basefile" "$realname" > "$tmpdir/index"
-	> "$tempo"
-
-	sed -i "/$tag/r $tempo" "$tagfile"
-	echo "ruk zara"
-	echo "kar diya saale"
 }
 
 confirm() { read -erp "Really $1 \"$base\"? (y/N) " choice && echo "$choice" | grep -qi "^y$" || exit 1 ;}
