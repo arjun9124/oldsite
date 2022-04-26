@@ -45,6 +45,7 @@ main {
 h1, h2, h3 {color:lightgrey; }
 strong, sup {color: lightgrey;}
 p, ul {color: lightgrey; }
+ul {color: lightgrey; }
 z {color: khaki;}
 a {color: darkkhaki; }
 a:hover {color: khaki; }
