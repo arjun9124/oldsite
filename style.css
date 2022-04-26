@@ -160,3 +160,12 @@ a:hover {color: khaki; }
 	background: rgba(50,50,50,0.9);
 
 }
+
+#imz{
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	border: dashed 2px;
+	border-color: lightskyblue;
+	border-radius: 5px;
+}
