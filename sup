@@ -16,10 +16,11 @@ read -erp "kaunsa file ?:
     " updatefile
 read -erp "kya update kiya ?:
     " update
+read -erp "content :    " content
 read -erp "marker bata (format <!-- mark -->) :
     " marker
 read -erp "RSS file bata :
-    " sangh
+    " rss
 
 # You will want to change these variables to your needs.
 # In order to cleanly use sed on a multi-line file, we have to use `tr` to
@@ -41,15 +42,28 @@ date="$(LC_TIME=en_US date '+%a, %d %b %Y %H:%M:%S %z')"
 
 # yes luke is surely a brainlet but good script.
 
-temp="$(mktemp)";
+utemp="$(mktemp)";
+rtemp="$(mktemp)";
 trap 'rm -f "$temp"' 0 1 2 3 15	# Delete temp file after script termination.
 echo "
 <br><item>
-<strong><update>$update<update></strong>
+<update>$update<update>
+<p>$content</p>
 <br><sup><pubDate>$date</pubDate></sup>
 </item><br>
-" > "$temp"
+" > "$utemp"
 
-sed -i "/$marker/r $temp" "$updatefile"
+echo "
+<item>
+<title>$update</title>
+<pubDate>$rssdate</pubDate>
+<description><![CDATA[$content
+]]></description>
+</item>
+" > "$rtemp"
+
+sed -i "/$marker/r $utemp" "$updatefiletoo"
+sed -i "/$marker/r $utemp" "$updatefile"
+sed -i "/<!-- SUP -->/r $rtemp" "$rss"
 echo "ruk zara"
 echo "kar diya saale"
