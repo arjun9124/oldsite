@@ -11,6 +11,7 @@ html {
 	background-size: cover;
 
 }
+
 .header {
 
 	padding: 0.7ex 0.7ex 0.7ex 2em;
@@ -23,11 +24,13 @@ html {
 }
 
 
-body {
+
+@font-face {font-family: Pixellari; src: url("Pixellari.ttf"); }
+
+body { 
 	font-family: sans-serif;
 	/* background: linear-gradient(indigo, darkslategray) fixed ; */
 	/* background: powderblue ; */
-
 }
 
 main {
@@ -42,18 +45,13 @@ main {
 
 
 
-h1, h2, h3 {color:lightgrey; }
-h2 { margin: 0px; padding: 0px;}
-strong, sup {color: lightgrey;}
-p, ul {color: lightgrey; }
-li, ul {color: lightgrey; }
-z {color: khaki;}
+h1, h2, h3, strong {color:lightgrey; font-family: Pixellari, sans-serif; }
+h2 { padding: 10px 10px 0px 0px; margin: 0px;}
+update, strong, sup {color: lightgrey; }
+li, p, ul {color: lightgrey; }
+z {color: khaki; font-family: Pixellari;}
 a {color: darkkhaki; }
 a:hover {color: khaki; }
-
-/* #bloog h1, h2, h3, strong, sup{color: #333;}
-
-
 
 /* The sidebar menu */
 /* When you mouse over the navigation links, change their color */
@@ -67,7 +65,7 @@ a:hover {color: khaki; }
 	margin: 20px 10px 10px 0px;
 	padding: 1em;
 	width: 125px;
-	height: 100%
+	height: 100%;
 	overflow: auto;
 }
 
@@ -97,6 +95,16 @@ a:hover {color: khaki; }
 	margin: 10px 10px 10px 10px;
 }
 
+#todo {
+	height:200px;
+
+	overflow: auto;
+	border: dashed 2px;
+	border-color: lightskyblue;
+	border-radius: 7px;
+	padding: 1.5em;
+	margin: 20px 10px 10px 10px;
+}
 
 #new {
 	float:left;
@@ -106,7 +114,8 @@ a:hover {color: khaki; }
 	border: dashed 2px;
 	border-color: lightskyblue;
 	padding: 1em;
-	overflow:auto;
+	overflow: auto;
+	border-radius: 7px;
 }
 
 #mu {
@@ -117,12 +126,13 @@ a:hover {color: khaki; }
 	border: dashed 2px;
 	border-color: lightskyblue;
 	padding: 1em;
+	border-radius: 7px;
 	overflow:auto;
 }
 
-#mu h2{ margin: 5px; }
-#new h2{ margin: 5px; }
-
+#mu h2{ margin: 5px 0px 0px 0px; }
+#new h2{ margin: 5px 0px 0px 0px; }
+#todo h2{margin: 0px 0px 0px 0px; padding: 0px;}
 #spacer {
 	height: 20px;
 }
@@ -134,7 +144,6 @@ a:hover {color: khaki; }
 
 /* ENTRY CSS */
 .entry {
-	
 	border-left: 10px solid darkslategray;
 	padding: 0px 10px 0px 10px;
 	border-radius: 0 30px 30px 0;
@@ -142,7 +151,7 @@ a:hover {color: khaki; }
 	background-color: lightblue;
 	}
 
-.entry h2 { margin: 5px auto 2px auto; color: 222222; }
+.entry h2 { margin: 5px auto 2px auto; color: #222222; padding: 10px 10px 0px 0px;}
 .entry a {color: midnightblue;}
 .entry a:hover {color: turquoise;}
 .entry strong {color:black;}
@@ -168,5 +177,5 @@ a:hover {color: khaki; }
 	margin-bottom: 20px;
 	border: dashed 2px;
 	border-color: lightskyblue;
-	border-radius: 5px;
+	border-radius: 7px;
 }
