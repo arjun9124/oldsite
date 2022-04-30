@@ -6,17 +6,23 @@ html {
 	margin-top: 30px;
 	color: #333;
 	padding-bottom: 200px;
-	 }
-body {
-	font-family: Arial, sans-serif;
-	/* background: linear-gradient(indigo, darkslategray) fixed ; */
-	background: powderblue ;
-	margin-bottom: 100px ;
+	background: powderblue;
+
 }
 
-a {color: royalblue; }
-a:hover {color: blue; }
+body {
+	font-family: sans-serif;
+	margin-bottom: 100px ;
+	padding: 20px;
+}
 
+
+a {color: khaki; }
+a:hover {color: darkkhaki; }
+h2 { padding: 10px 10px 0px 0px; margin: 0px;}
+z {color: darkturquoise; font-family: Pixellari;}
+a {color: royalblue; }
+a:hover {color: lightskyblue; }
 .entry {
 	border-left: 10px solid darkslategray;
 	padding: 0px 10px 0px 10px;
@@ -25,4 +31,4 @@ a:hover {color: blue; }
 	background-color: lightblue;
 	}
 
-.entry h2 { margin: 5px auto 2px auto; }
+.entry h2 { margin: 5px auto 2px auto; font-family: Pixellari, sans-serif; }
