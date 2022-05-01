@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="rss.css" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+<title>Arjun9124's Updates Rss Feed</title>
+<description>My Updates RSS feed.</description>
+<language>en-us</language>
+<link>http://yourwebsite.com/rss.xml</link>
+<atom:link href="http://arjun9124.github.io/updates.xml" rel="self" type="application/rss+xml" />
+
+<!-- SUP -->
+
+<item>
+<title><strong>Some GIF's Added</strong></title>
+<pubDate></pubDate>
+<description><![CDATA[So lets get some old web energy flowing with these retro-ey gifs
+]]></description>
+</item>
+
