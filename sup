@@ -62,7 +62,6 @@ echo "
 </item>
 " > "$rtemp"
 
-sed -i "/$marker/r $utemp" "$updatefiletoo"
 sed -i "/$marker/r $utemp" "$updatefile"
 sed -i "/<!-- SUP -->/r $rtemp" "$rss"
 echo "ruk zara"
