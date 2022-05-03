@@ -97,7 +97,6 @@ a:hover {color: khaki; }
 
 #todo {
 	height:200px;
-
 	overflow: auto;
 	border: dashed 2px;
 	border-color: lightskyblue;
@@ -106,40 +105,30 @@ a:hover {color: khaki; }
 	margin: 20px 10px 10px 10px;
 }
 
-#new {
+#todo h2{margin: 5px 0px 0px 0px; padding: 0px;}
+
+#htodo {
 	float:left;
-	width:500px;
-	height:150px;
-	margin: 20px 10px 10px 10px;
-	border: dashed 2px;
-	border-color: lightskyblue;
-	padding: 1em;
+	width: 40%;
+	height:200px;
 	overflow: auto;
-	border-radius: 7px;
-}
-
-#mu {
-	float: left;
-	width:500px;
-	height:150px;
-	margin: 20px 10px 10px 10px;
 	border: dashed 2px;
 	border-color: lightskyblue;
-	padding: 1em;
 	border-radius: 7px;
-	overflow:auto;
+	padding: 1.5em;
+	margin: 10px 10px 10px 10px;
+
 }
 
-#mu h2{ margin: 5px 0px 0px 0px; }
-#new h2{ margin: 5px 0px 0px 0px; }
-#todo h2{margin: 0px 0px 0px 0px; padding: 0px;}
+#todo h2{margin: 5px 0px 0px 0px; padding: 0px;}
+
 #spacer {
 	height: 20px;
 }
 
 #vspacer {
-	height: 220px;
-	width: 40px;
+	height: 200px;
+	width: 10px;
 }
 
 /* ENTRY CSS */
