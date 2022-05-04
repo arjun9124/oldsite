@@ -2,8 +2,33 @@
 <head>
 <title>Blog Index</title>
 <meta charset="utf-8"/>
-<link rel='stylesheet' type='text/css' href='style.css'>
-</head>
+        <meta charset="utf-8">
+<script>
+<!--
+function getStylesheet() {
+      var currentTime = new Date().getHours();
+      if (0 <= currentTime&&currentTime < 5) {
+       document.write("<link rel='stylesheet' href='style3.css' type='text/css'>");
+      }
+      if (5 <= currentTime&&currentTime < 11) {
+       document.write("<link rel='stylesheet' href='style.css' type='text/css'>");
+      }
+      if (11 <= currentTime&&currentTime < 16) {
+       document.write("<link rel='stylesheet' href='style.css' type='text/css'>");
+      }
+      if (16 <= currentTime&&currentTime < 22) {
+       document.write("<link rel='stylesheet' href='style2.css' type='text/css'>");
+      }
+      if (22 <= currentTime&&currentTime <= 24) {
+       document.write("<link rel='stylesheet' href='style3.css' type='text/css'>");
+      }
+}
+
+getStylesheet();
+-->
+</script>
+
+<noscript><link href="style1.css" rel="stylesheet"></noscript></head>
 
 <body>
 <div class="header"><div class="title"><h1>Blog Index</h1></div><strong>welcome to my blog</strong><h3><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="blog.html">Blog</a> | <a href="projects.html">Projects</a> | <a href="links.html">Links</a></H3></div>

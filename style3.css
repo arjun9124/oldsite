@@ -4,7 +4,7 @@ html {
 	margin-right: auto;
 	margin-top: 30px;
 	color: #333;
-	background-image: url("files/bg1.png");
+	background-image: url("files/bg3.png");
 	background-repeat: repeat-y;
 	background-position: right top;
 	background-attachment: fixed;
@@ -17,7 +17,7 @@ html {
 	padding: 0.7ex 0.7ex 0.7ex 2em;
 	text-align:  left;
 	border: dashed 2px;
-	border-color: darkgoldenrod;
+	border-color: orangered;
 	border-radius: 30px 30px 0px 0px;
 	border-bottom-style: none;
 	background: rgba(50,50,50,0.9);
@@ -27,7 +27,7 @@ html {
 
 @font-face {font-family: Pixellari; src: url("files/Pixellari.ttf"); }
 
-body { 
+body {
 	font-family: sans-serif;
 	/* background: linear-gradient(indigo, darkslategray) fixed ; */
 	/* background: powderblue ; */
@@ -37,7 +37,7 @@ main {
 	padding: 0px 10px 10px 10px;
 	background: rgba(50,50,50,0.9);
 	border: dashed 2px ;
-	border-color: darkgoldenrod;
+	border-color: orangered;
 	border-top-style: none;
 	border-bottom-style: none;
 
@@ -49,14 +49,14 @@ h1, h2, h3, strong {color:lightgrey; font-family: Pixellari, sans-serif; }
 h2 { padding: 10px 10px 0px 0px; margin: 0px;}
 update, strong, sup {color: lightgrey; }
 li, p, ul {color: lightgrey; }
-z {color: khaki; font-family: Pixellari;}
-a {color: darkkhaki; }
-a:hover {color: khaki; }
+z {color: cyan; font-family: Pixellari;}
+a {color: cyan; }
+a:hover {color: teal; }
 strong {margin: 0px; padding: px;}
 /* The sidebar menu */
 /* When you mouse over the navigation links, change their color */
 #nav a:hover {
-  color: khaki;
+  color: cyan;
 }
 
 #nav {
@@ -99,7 +99,7 @@ strong {margin: 0px; padding: px;}
 	height:200px;
 	overflow: auto;
 	border: dashed 2px;
-	border-color: lightskyblue;
+	border-color: turquoise;
 	border-radius: 7px;
 	padding: 1.5em;
 	margin: 20px 10px 10px 10px;
@@ -113,7 +113,7 @@ strong {margin: 0px; padding: px;}
 	height:200px;
 	overflow: auto;
 	border: dashed 2px;
-	border-color: lightskyblue;
+	border-color: turquoise;
 	border-radius: 7px;
 	padding: 1.5em;
 	margin: 10px 10px 10px 10px;
@@ -152,7 +152,7 @@ strong {margin: 0px; padding: px;}
 	margin-top: 10px;
 	text-align: center;
 	border: dashed 2px;
-	border-color: darkgoldenrod;
+	border-color: orangered;
 	border-top-style: none;
 	border-radius: 0px 0px 30px 30px;
 	background: rgba(50,50,50,0.9);
@@ -164,6 +164,6 @@ strong {margin: 0px; padding: px;}
 	margin-right: 20px;
 	margin-bottom: 20px;
 	border: dashed 2px;
-	border-color: lightskyblue;
+	border-color: turquoise;
 	border-radius: 7px;
 }
