@@ -15,6 +15,7 @@ blogfile="blog.html"
 indexfile="blogindex.html"
 tagfile="tags.html"
 rssfile="rss.xml"
+homepage="index.html"
 archivefile="$webdir/blog/.htaccess"
 [ -z "$EDITOR" ] && EDITOR="nano"
 
@@ -66,9 +67,11 @@ publish() { \
 	printf "<li>%s &ndash; <a href=\"blog/%s\">%s</a></li>\\n" "$(date '+%Y %b %d')" "$basefile" "$realname" > "$tempo"
 	# iske upar index entry wala syntax hai.
 	sed -i "/<!-- LB -->/r $tmpdir/html" "$blogfile"
-	sed -i "/$marker/r $tempo" "$tagfile"
+	sed -i "/$marker/r $tmpdir/index" "$tagfile"
 	sed -i "/<!-- LB -->/r $tmpdir/rss" "$rssfile"
 	sed -i "/<!-- LB -->/r $tmpdir/index" "$indexfile"
+	sed -i "/<!-- LB -->/r $tmpdir/index" "$homepage"
+
 	sed -i "/ \"$base.html\"/d" "$archivefile"
 	echo "AddDescription \"$realname\" \"$basefile\" #$rssdate" >> "$archivefile"
 
@@ -83,6 +86,8 @@ delete() { \
 	sed -i "/<div class='entry'>/{:a;N;/<\\/div>/!ba};/id='$base'/d" "$blogfile"
 	sed -i "/<li>.*<a href=\"blog\\/$base.html\">/d" "$indexfile"
 	sed -i "/<li>.*<a href=\"blog\\/$base.html\">/d" "$tagfile"
+	sed -i "/<li>.*<a href=\"blog\\/$base.html\">/d" "$homepage"
+
 	rm -f "$webdir/blog/$basefile" && [[ "$1" != "draft" ]] && printf "Old blog entry removed.\\n";}
 
 revise() { awk '/^<small>\[/{flag=1;next}/<footer>/{flag=0}flag' "$webdir/blog/$chosen" > "$webdir/blog/.drafts/$basefile"

@@ -11,6 +11,57 @@
 
 <!-- LB -->
 
+
+
+
+
+
+
+<item>
+<title>Birdwatching At A Local Park: 2015</title>
+<guid>https://arjun9124.github.io/photography.html#birdwatching-at-a-local-park-2015</guid>
+<pubDate>Sun, 08 May 2022 16:30:50 +0530</pubDate>
+<description><![CDATA[
+birdwatching-at-a-local-park-2015.html
+So here I am posting another one of my photography adventures. Here are some pictures from a little birdwatching trip at a local park that happened sometime in 2015. <br>
+<h3>Backstory</h3><br> It was year 2015, it had been only a few months that I had started persuing photography as a hobby. I had recently got a Nikon Coolpix S9900 and me and by dad would frequently take time out of our weekends to have fun with the camera. <br>
+<center><img src="photography/Post2/DSCN0023.JPG" width="700px"><br><a>The lake</a></center> Or maybe a pond would sound much better, and yes my local park has a few ponds as well. <br>
+<center><img src="photography/Post2/DSCN0024.JPG" width="700px"></center><br>
+<center><img src="photography/Post2/DSCN0027.JPG" width="700px"></center><br>
+<center><img src="photography/Post2/DSCN0034.JPG" width="700px"><br><i>A duck</i><br><img src="photography/Post2/DSCN0035.JPG" width="700px"><br><i>fishing ?</i><br></center>
+<center><img src="photography/Post2/DSCN0041.JPG" width="700px"><br><i>A common kingfisher</i><br><img src="photography/Post2/DSCN0043.JPG" width="700px"></center><br>I am no expert on birds but from my knowledge this might be a kingfisher. <br>
+<center><img src="photography/Post2/DSCN0055.JPG" width="700px"><br><i>Some eagles</i><br></center>
+<center><img src="photography/Post2/DSCN0057.JPG" width="700px"><br></center>
+<center><img src="photography/Post2/DSCN0068.JPG" width="700px"><br><i> An unidentified bird.</i><br></center>
+<center><img src="photography/Post2/DSCN0070.JPG" width="700px"><br><i>Birdwatching turns to squirrel watching</i></center>
+ And that was it !
+]]></description>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>Blog Up And Running</title>
+<guid>https://arjun9124.github.io/blog.html#blog-up-and-running</guid>
+<pubDate>Tue, 05 Apr 2022 14:25:37 +0530</pubDate>
+<description><![CDATA[
+Hey there, so now my blog is finally up and running (upto the point where I wanted it to be as of now.) 
+Its nothing too fancy, but it does the job hopefully. I will keep updating the blog and will keep adding more to it. Currently I think that a list of the most recent posts on the front page would be something cool to have. 
+
+The blog is techincally just some HTML files that are updated by a small shell script named lb by luke smith (lukesmith.xyz). Its a very simple setup which gets the job done, I keep the blog files on my computer and then when I like to post something new I use the lb shell script to create the new post which then is automatically appended to the blog's files by the lb script. Afterwards I add the edited files to the repository and commit it to the main branch to finally add the changes to my github pages website. I shall now port the contents of my older blog to this new blog on my own website. 
+]]></description>
+</item>
+
+
 <item>
 <title>Shimla Trip 2015</title>
 <guid>https://arjun9124.github.io/photography.html#shimla-trip-2015</guid>
@@ -159,17 +210,6 @@ PS: The pictures arent too great, I couldn't figure out the lighting. Which is s
 
 
 
-<item>
-<title>Blog Up And Running</title>
-<guid>https://arjun9124.github.io/webpage/blog.html#blog-up-and-running</guid>
-<pubDate>Tue, 05 Apr 2022 14:25:37 +0530</pubDate>
-<description><![CDATA[
-Hey there, so now my blog is finally up and running (upto the point where I wanted it to be as of now.) 
-Its nothing too fancy, but it does the job hopefully. I will keep updating the blog and will keep adding more to it. Currently I think that a list of the most recent posts on the front page would be something cool to have. 
-
-The blog is techincally just some HTML files that are updated by a small shell script named lb by luke smith (lukesmith.xyz). Its a very simple setup which gets the job done, I keep the blog files on my computer and then when I like to post something new I use the lb shell script to create the new post which then is automatically appended to the blog's files by the lb script. Afterwards I add the edited files to the repository and commit it to the main branch to finally add the changes to my github pages website. I shall now port the contents of my older blog to this new blog on my own website. 
-]]></description>
-</item>
 
 
 <item>

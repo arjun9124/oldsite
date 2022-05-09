@@ -16,6 +16,7 @@ blogfile="photography.html"
 indexfile="blogindex.html"
 tagfile="tags.html"
 rssfile="rss.xml"
+homepage="index.html"
 archivefile="$webdir/blog/.htaccess"
 [ -z "$EDITOR" ] && EDITOR="nano"
 
@@ -57,17 +58,16 @@ publish() { \
 	[ -z "$rssdate" ] && rssdate="$(LC_TIME=en_US date '+%a, %d %b %Y %H:%M:%S %z')" # RSS date formats must comply with standards to validate.
 	webdate="$(date '+%a, %d %b %Y %H:%M:%S %z')" # But this visible date you can set to any format.
 	tmpdir=$(mktemp -d)
-	tempo=$(mktemp)
-	printf "<!DOCTYPE html>\\n<html lang=\"en\">\\n<head>\\n<title>%s</title>\\n<link rel='stylesheet' type='text/css' href='%s'>\\n<meta charset='utf-8'/>\\n</head>\\n<body>\\n<h1>%s</h1>\\n<small>[<a href='%s#%s'>link</a>&mdash;]</small>\\n%s\\n<footer>by <strong><a href='%s'>%s</a></strong></footer>\\n</body>\\n\\n</html>" "$realname" "$css" "$realname" "../$blogfile" "$base" "$basefile" "$(cat "$webdir/blog/.drafts/$basefile")" "$website" "$name" > "$webdir/blog/$basefile"
+	printf "<!DOCTYPE html>\\n<html lang=\"en\">\\n<head>\\n<title>%s</title>\\n<link rel='stylesheet' type='text/css' href='%s'>\\n<meta charset='utf-8'/>\\n</head>\\n<body>\\n<h1>%s</h1>\\n<small>[<a href='%s#%s'>link</a>&mdash;<a href='%s'>standalone</a>]</small>\\n%s\\n<footer>by <strong><a href='%s'>%s</a></strong></footer>\\n</body>\\n\\n</html>" "$realname" "$css" "$realname" "../$blogfile" "$base" "$basefile" "$(cat "$webdir/blog/.drafts/$basefile")" "$website" "$name" > "$webdir/blog/$basefile"
 	printf "\\n<item>\\n<title>%s</title>\\n<guid>%s%s#%s</guid>\\n<pubDate>%s</pubDate>\\n<description><![CDATA[\\n%s\\n]]></description>\\n</item>\\n\\n" "$realname" "$website" "$blogfile" "$base" "$rssdate" "$(cat "$webdir/blog/.drafts/$basefile")" >  "$tmpdir/rss"
 	printf "<div class='entry'>\\n<h2 id='%s'>%s</h2>\\n<small>[<a href='#%s'>link</a>&mdash;<a href='%s'>standalone</a>]</small>\\n%s\\n<small>%s</small>\\n</div>\\n" "$base" "$realname" "$base" "blog/$basefile" "$(cat "$webdir/blog/.drafts/$basefile")" "$webdate" > "$tmpdir/html"
 	printf "<li>%s &ndash; <a href=\"blog/%s\">%s</a></li>\\n" "$(date '+%Y %b %d')" "$basefile" "$realname" > "$tmpdir/index"
-	printf "<li>%s &ndash; <a href=\"blog/%s\">%s</a></li>\\n" "$(date '+%Y %b %d')" "$basefile" "$realname" > "$tempo"
 	# iske upar index entry wala syntax hai.
 	sed -i "/<!-- LB -->/r $tmpdir/html" "$blogfile"
-	sed -i "/<!-- PHOTO -->/r $tempo" "$tagfile"
 	sed -i "/<!-- LB -->/r $tmpdir/rss" "$rssfile"
 	sed -i "/<!-- LB -->/r $tmpdir/index" "$indexfile"
+	sed -i "/<!-- LB -->/r $tmpdir/index" "$homepage"
+
 	sed -i "/ \"$base.html\"/d" "$archivefile"
 	echo "AddDescription \"$realname\" \"$basefile\" #$rssdate" >> "$archivefile"
 
@@ -81,7 +81,8 @@ delete() { \
 	sed -i "/<item/{:a;N;/<\\/item>/!ba};/#$base<\\/guid/d" "$rssfile"
 	sed -i "/<div class='entry'>/{:a;N;/<\\/div>/!ba};/id='$base'/d" "$blogfile"
 	sed -i "/<li>.*<a href=\"blog\\/$base.html\">/d" "$indexfile"
-	sed -i "/<li>.*<a href=\"blog\\/$base.html\">/d" "$tagfile"
+	sed -i "/<li>.*<a href=\"blog\\/$base.html\">/d" "$homepage"
+
 	rm -f "$webdir/blog/$basefile" && [[ "$1" != "draft" ]] && printf "Old blog entry removed.\\n";}
 
 revise() { awk '/^<small>\[/{flag=1;next}/<footer>/{flag=0}flag' "$webdir/blog/$chosen" > "$webdir/blog/.drafts/$basefile"
