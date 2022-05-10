@@ -53,42 +53,7 @@ z {color: cyan; font-family: Pixellari;}
 a {color: cyan; }
 a:hover {color: teal; }
 strong {margin: 0px; padding: px;}
-/* The sidebar menu */
-/* When you mouse over the navigation links, change their color */
-#nav a:hover {
-  color: cyan;
-}
 
-#nav {
-
-	float: left;
-	margin: 20px 10px 10px 0px;
-	padding: 1em;
-	width: 125px;
-	height: 100%;
-	overflow: auto;
-}
-
-#nav ul {
-	margin: 0;
-	padding: 0;
-}
-
-#nav li {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-#nav li ul {
-	padding-left: 0.6em !important;
-}
-
-#nav li a {
-	display: block;
-	margin: 0;
-	padding: 0.8ex 2em 0.8ex 1em;
-}
 /* Style page content */
 .main {
 	padding: 10px 10px;
@@ -103,32 +68,6 @@ strong {margin: 0px; padding: px;}
 	border-radius: 7px;
 	padding: 1.5em;
 	margin: 20px 10px 10px 10px;
-}
-
-#todo h2{margin: 5px 0px 0px 0px; padding: 0px;}
-
-#htodo {
-	float:left;
-	width: 43.5%;
-	height:200px;
-	overflow: auto;
-	border: dashed 2px;
-	border-color: turquoise;
-	border-radius: 7px;
-	padding: 1.5em;
-	margin: 10px 10px 10px 10px;
-
-}
-
-#todo h2{margin: 5px 0px 0px 0px; padding: 0px;}
-
-#spacer {
-	height: 20px;
-}
-
-#vspacer {
-	height: 200px;
-	width: 10px;
 }
 
 /* ENTRY CSS */

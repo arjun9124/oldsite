@@ -30,6 +30,29 @@ getStylesheet();
 </script>
 
 <noscript><link href="style1.css" rel="stylesheet"></noscript>
+<style>
+#todo h2{margin: 5px 0px 0px 0px; padding: 0px;}
+
+#htodo {
+	float:left;
+	width: 50%;
+	height: 420px;
+	overflow: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#todo h2{margin: 5px 0px 0px 0px; padding: 0px;}
+
+#spacer {
+	height: 20px;
+}
+
+#vspacer {
+	height: 200px;
+	width: 10px;
+}
+</style>
         <title>arjun9124</title>
 
 </head>
@@ -46,7 +69,8 @@ getStylesheet();
 		<h2>Whats the deal with the website ?</h2><br><li>It's<a href="https://motherfuckingwebsite.com/"> minimalist.</a></li><li>This website is how I choose to express myself in an internet dominated by high frequency social media where "clarity" is a non existant phrase</li><li>This page is my form of self expression in an internet where expression is a commodity constrained by 'alorgithms', megacorps, governments and NPCs.</li></P>
 		<h2>Who's got the time to open a bloody website just to see something random you posted ?</h2><br><p>Yes exactly, who's going to open a bloody website with a bootleg URL and a 2005 teir degsin to read a post about some <a href="files/bachpan ka joke.jpg">"bachpan ka joke"</a> that kept him up all night. Thats why get updates from me on your own device of choice using my RSS feeds. Dont know what's RSS ? Read it<a href="rashtriya swensevak sangh">here</a>. (The aformentioned RSS is not that one where they wear khakhi shorts and play sports at local parks in the morning and get accused of lynching minorites in the evening.)<br><li> Blog RSS Feed </li><li>Random Musings RSS Feed</li><li>Updates RSS Feed</li><strong><a href="how2rss">How do I use this <i>RSS Feed</i> ?</a></strong><br>
 				<div id="spacer"></div>
-        <h2> Recent Posts</h2>
+<div id="boxes">
+                <h2> Recent Posts</h2>
 				<div id="todo">
 
 				<!-- LB -->
@@ -55,11 +79,20 @@ getStylesheet();
 
 				</div>
 
-			<div id="htodo">
-        	<h2> Updates 🆕 </h2>
-		<br><a href="updates.xml">RSS Feed</a>
-<hr>
+				<div id="spacer"></div>
+
+		<div id="htodo">
+		<h2> Updates 🆕 </h2><br><a href="updates.xml">RSS Feed</a>
+<div id="todo">
+
 	<!-- SUP -->
+
+<br><item>
+<update><strong>Timed CSS Themes Added!</strong><update>
+<p>Time dependenent pixel art themes have been added to the webpage. I hope you all like them.</p>
+<br><sup><pubDate>Tue, 10 May 2022 16:41:08 +0530</pubDate></sup>
+</item><br>
+
 
 <br><item>
 <update><strong>Some GIF's Added</strong><update>
@@ -122,10 +155,12 @@ getStylesheet();
 <pubDate><sup>Sun, 10 Apr 2022 11:28:15 +0530</sup></pubDate>
 </item>
 
-                </div>
-			<div id="htodo">
-    <h2> Random Musings</h2>
-	<br><a href="updates.xml">RSS Feed</a><hr>
+        </div></div>
+
+    <div id="htodo"><h2> Random Musings</h2>	<br><a href="updates.xml">RSS Feed</a>
+
+
+	<div id="todo">
         <!-- MU -->
 
 <br><item>
@@ -147,8 +182,10 @@ getStylesheet();
 </item><br>
 
 
-                </div>
-                <div id="vspacer"></div><div id="spacer"></div><div id="spacer"></div><div id="spacer"></div><div id="spacer"></div>
+              </div></div>
+
+                <div id="vspacer"></div><div id="svspacer" style="height: 140px;"></div>
+
 
 
 
