@@ -4,7 +4,7 @@ html {
 	margin-right: auto;
 	margin-top: 30px;
 	color: #333;
-	background-image: url("files/bg1.png");
+	background-image: url("files/bg0.png");
 	background-repeat: repeat-y;
 	background-position: right top;
 	background-attachment: fixed;
@@ -17,7 +17,7 @@ html {
 	padding: 0.7ex 0.7ex 0.7ex 2em;
 	text-align:  left;
 	border: dashed 2px;
-	border-color: darkgoldenrod;
+	border-color: cadetblue;
 	border-radius: 30px 30px 0px 0px;
 	border-bottom-style: none;
 	background: rgba(50,50,50,0.9);
@@ -37,7 +37,7 @@ main {
 	padding: 0px 10px 10px 10px;
 	background: rgba(50,50,50,0.9);
 	border: dashed 2px ;
-	border-color: darkgoldenrod;
+	border-color: cadetblue;
 	border-top-style: none;
 	border-bottom-style: none;
 
@@ -49,9 +49,9 @@ h1, h2, h3, strong {color:lightgrey; font-family: Pixellari, sans-serif; }
 h2 { padding: 10px 10px 0px 0px; margin: 0px;}
 update, strong, sup {color: lightgrey; }
 li, p, ul {color: lightgrey; }
-z {color: khaki; font-family: Pixellari;}
-a {color: darkkhaki; }
-a:hover {color: khaki; }
+z {color: deepskyblue; font-family: Pixellari;}
+a {color: deepskyblue; }
+a:hover {color: lightseagreen; }
 
 
 /* Style page content */
@@ -92,7 +92,7 @@ a:hover {color: khaki; }
 	margin-top: 10px;
 	text-align: center;
 	border: dashed 2px;
-	border-color: darkgoldenrod;
+	border-color: cadetblue;
 	border-top-style: none;
 	border-radius: 0px 0px 30px 30px;
 	background: rgba(50,50,50,0.9);

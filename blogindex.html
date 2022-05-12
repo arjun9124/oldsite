@@ -7,26 +7,28 @@
 <!--
 function getStylesheet() {
       var currentTime = new Date().getHours();
-      if (0 <= currentTime&&currentTime < 5) {
+      if (3 <= currentTime&&currentTime < 6) {
        document.write("<link rel='stylesheet' href='style3.css' type='text/css'>");
       }
-      if (5 <= currentTime&&currentTime < 11) {
-       document.write("<link rel='stylesheet' href='style.css' type='text/css'>");
+      if (6 <= currentTime&&currentTime < 12) {
+       document.write("<link rel='stylesheet' href='style0.css' type='text/css'>");
       }
-      if (11 <= currentTime&&currentTime < 16) {
-       document.write("<link rel='stylesheet' href='style.css' type='text/css'>");
+      if (12 <= currentTime&&currentTime < 16) {
+       document.write("<link rel='stylesheet' href='style1.css' type='text/css'>");
       }
       if (16 <= currentTime&&currentTime < 22) {
        document.write("<link rel='stylesheet' href='style2.css' type='text/css'>");
       }
-      if (22 <= currentTime&&currentTime <= 24) {
+      if (22 <= currentTime&&currentTime <= 3) {
        document.write("<link rel='stylesheet' href='style3.css' type='text/css'>");
       }
 }
 
 getStylesheet();
 -->
-</script> <style>
+</script>
+
+<noscript><link href="style.css" rel="stylesheet"></noscript>  <style>
 #todo h2{margin: 5px 0px 0px 0px; padding: 0px;}
 
 #htodo {
@@ -58,6 +60,7 @@ getStylesheet();
 <div id="main">
 <ul>
 <!-- LB -->
+<li>2022 May 12 &ndash; <a href="blog/the-only-day-your-dad-will-ever-ask-you-to-watch-tv.html">The Only Day Your Dad Will Ever Ask You To Watch TV</a></li>
 <li>2022 May 09 &ndash; <a href="blog/birdwatching-at-a-local-park-2015.html">Birdwatching At A Local Park: 2015</a></li>
 <li>2022 May 05 &ndash; <a href="blog/blog-up-and-running.html">Blog Up And Running</a></li>
 <li>2022 Apr 29 &ndash; <a href="blog/shimla-trip-2015.html">Shimla Trip 2015</a></li>
