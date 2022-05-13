@@ -6,10 +6,17 @@
 <title>Arjun9124's Updates Rss Feed</title>
 <description>My Updates RSS feed.</description>
 <language>en-us</language>
-<link>http://yourwebsite.com/rss.xml</link>
+<link>http://arjun9124.github.io/updates.xml</link>
 <atom:link href="http://arjun9124.github.io/updates.xml" rel="self" type="application/rss+xml" />
 
 <!-- SUP -->
+
+<item>
+<title><a href="https://empiresoflight.blogspot.com/2022/04/grinding-soul-into-dust-extracurricular.html">Grinding the soul into dust: Extracurricular activites in Indian schools</a></title>
+<pubDate>Thu, 12 May 2022 13:23:55 +0530</pubDate>
+<description><![CDATA[ ....Rather than enable spontaneous but restrained self expression, they were compelled to robotically make hand gestures at particular phrases and artificial pauses (an old radio trick for dramatic emphasis).....  Might as well call them currycular activites]]></description>
+</item>
+
 
 <item>
 <title><strong>New morning theme !</strong></title>

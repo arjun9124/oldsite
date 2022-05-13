@@ -12,14 +12,19 @@
 
 echo Arjuns modified, mutilated, frankensien sup.
 
-read -erp "kaunsa file ?:
+read -erp "Filename to write to:
     " updatefile
-read -erp "kya update kiya ?:
+read -erp "Secondary file (optional):
+    " update2file
+read -erp "Update Title:
     " update
-read -erp "content :    " content
-read -erp "marker bata (format <!-- mark -->) :
+read -erp "Update Content:
+    " content
+read -erp "Marker (format <!-- mark -->) :
     " marker
-read -erp "RSS file bata :
+read -erp "Secondary Marker (optional):
+    " mark2er
+read -erp "RSS file:
     " rss
 
 # You will want to change these variables to your needs.
@@ -47,22 +52,23 @@ rtemp="$(mktemp)";
 trap 'rm -f "$temp"' 0 1 2 3 15	# Delete temp file after script termination.
 echo "
 <br><item>
-<update>$update<update>
+<update><strong>$update</strong><update>
 <p>$content</p>
-<br><sup><pubDate>$date</pubDate></sup>
+<br><small><pubDate>$date</pubDate></small>
 </item><br>
 " > "$utemp"
 
 echo "
 <item>
 <title>$update</title>
-<pubDate>$rssdate</pubDate>
+<pubDate>$date</pubDate>
 <description><![CDATA[$content
 ]]></description>
 </item>
 " > "$rtemp"
 
 sed -i "/$marker/r $utemp" "$updatefile"
+sed -i "/$mark2er/r $utemp" "$update2file"
 sed -i "/<!-- SUP -->/r $rtemp" "$rss"
 echo "ruk zara"
 echo "kar diya saale"
