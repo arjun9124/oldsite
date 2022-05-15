@@ -12,6 +12,22 @@
 <!-- SUP -->
 
 <item>
+<title>Updates RSS Feed Fixed</title>
+<pubDate>Sat, 14 May 2022 11:22:25 +0530</pubDate>
+<description><![CDATA[Fixed the Updates RSS feed. Didnt close some tags lol
+]]></description>
+</item>
+
+
+<item>
+<title>Guestbook</title>
+<pubDate>Fri, 13 May 2022 14:25:42 +0530</pubDate>
+<description><![CDATA[A guestbook for the website, and maybe a webpage view meter as well.
+]]></description>
+</item>
+
+
+<item>
 <title><a href="https://empiresoflight.blogspot.com/2022/04/grinding-soul-into-dust-extracurricular.html">Grinding the soul into dust: Extracurricular activites in Indian schools</a></title>
 <pubDate>Thu, 12 May 2022 13:23:55 +0530</pubDate>
 <description><![CDATA[ ....Rather than enable spontaneous but restrained self expression, they were compelled to robotically make hand gestures at particular phrases and artificial pauses (an old radio trick for dramatic emphasis).....  Might as well call them currycular activites]]></description>
@@ -57,3 +73,6 @@
 ]]></description>
 </item>
 
+
+</channel>
+</rss>

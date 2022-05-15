@@ -54,7 +54,7 @@ echo "
 <br><item>
 <update><strong>$update</strong><update>
 <p>$content</p>
-<br><small><pubDate>$date</pubDate></small>
+<small><pubDate>$date</pubDate></small>
 </item><br>
 " > "$utemp"
 
