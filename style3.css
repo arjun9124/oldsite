@@ -61,6 +61,8 @@ strong {margin: 0px; padding: px;}
 	margin: 10px 10px 10px 10px;
 }
 /*chalja bro chalja yaara*/
+
+#todo {
 	height:200px;
 	overflow: auto;
 	border: dashed 2px;
