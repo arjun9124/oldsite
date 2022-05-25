@@ -7,7 +7,7 @@
 <!--
 function getStylesheet() {
       var currentTime = new Date().getHours();
-      if (3 <= currentTime&&currentTime < 6) {
+      if (1 <= currentTime&&currentTime < 6) {
        document.write("<link rel='stylesheet' href='style3.css' type='text/css'>");
       }
       if (6 <= currentTime&&currentTime < 12) {
@@ -16,12 +16,15 @@ function getStylesheet() {
       if (12 <= currentTime&&currentTime < 16) {
        document.write("<link rel='stylesheet' href='style1.css' type='text/css'>");
       }
-      if (16 <= currentTime&&currentTime < 22) {
+      if (16 <= currentTime&&currentTime < 20) {
        document.write("<link rel='stylesheet' href='style2.css' type='text/css'>");
       }
-      if (22 <= currentTime&&currentTime <= 3) {
+      if (20 <= currentTime&&currentTime < 23) {
        document.write("<link rel='stylesheet' href='style3.css' type='text/css'>");
       }
+      if (23 <= currentTime&&currentTime < 1) {
+	document.write("<link rel='stylesheet' href='style3.css' type='text/css'>");
+	}
 }
 
 getStylesheet();

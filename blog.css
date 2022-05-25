@@ -14,6 +14,7 @@ body {
 	font-family: sans-serif;
 	margin-bottom: 100px ;
 	padding: 20px;
+
 }
 
 
@@ -23,6 +24,7 @@ h2 { padding: 10px 10px 0px 0px; margin: 0px;}
 z {color: darkturquoise; font-family: Pixellari;}
 a {color: royalblue; }
 a:hover {color: lightskyblue; }
+c {color: lightgray; }
 .entry {
 	border-left: 10px solid darkslategray;
 	padding: 0px 10px 0px 10px;
