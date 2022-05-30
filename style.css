@@ -1,5 +1,4 @@
 html {
-	max-width: 1400px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 30px;
@@ -112,3 +111,23 @@ a:hover {color: darkcyan; }
   text-align: center;
 }
 
+#imz{
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	border: dashed 2px;
+	border-color: lightskyblue;
+	border-radius: 7px;
+}
+
+
+#todo {
+	height:200px;
+
+	overflow: auto;
+	border: dashed 2px;
+	border-color: lightskyblue;
+	border-radius: 7px;
+	padding: 1.5em;
+	margin: 20px 10px 10px 10px;
+}
