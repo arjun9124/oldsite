@@ -10,8 +10,7 @@ background-image: url("files/skinface.jpg");
 	background-position: right top;
 	background-attachment: fixed;
 	background-size: cover;
-	@font-face {font-family: Pixellari; src: url("files/Pixellari.ttf"); }
-    h1, h2, h3, strong {color:lightgrey; font-family: Pixellari, sans-serif; }
+
 	}
 #todo h2{margin: 5px 0px 0px 0px; padding: 0px;}
 
@@ -75,7 +74,53 @@ animation-direction:alternate;}
     100% {
         transform: translateX(1%);
     }
+    }
 
+
+.recoil {
+    animation-name: recoil !important;
+    animation-duration: .1s !important;
+    animation-iteration-count: infinite !important ;
+    animation-direction:alternate;
+    }
+
+
+@keyframes recoil {
+    0% {
+        transform: translateX(1%);
+    }
+
+
+    25% {
+        transform: translateY(-5%);
+    }
+
+  50% {
+        transform: translateX(-1%);
+    }
+
+ 100% {
+        transform: translateY(5%);
+    }
+}
+
+.slide {
+    animation-name: recoil !important;
+    animation-duration: 2s !important;
+    animation-iteration-count: infinite !important ;
+    animation-direction:alternate;
+
+    }
+
+@keyframes slide {
+     25% {
+            transform: translateX(10%);
+        }
+
+     75% {
+            transform: translateX(-10%);
+        }
+}
 
 
 }
@@ -85,6 +130,7 @@ animation-direction:alternate;}
 
 <body>
 <div style="position:static;top:0;"><marquee scrollamount="50" direction="right"><img src="files/poggydemon.png"></marquee></div><br><br>
+ <center><img src="files/gun.png" class="recoil" height="250"></center>
  <center><img src="files/poomerseethe.png" class="shake" height="250"></center>
 
  <center><h1>SHIDPOSTING</H1>
