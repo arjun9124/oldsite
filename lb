@@ -16,7 +16,7 @@ tagfile="tags.html"
 rssfile="rss.xml"
 homepage="index.html"
 archivefile="$webdir/blog/.htaccess"
-[ -z "$EDITOR" ] && EDITOR="kate"
+[ -z "$EDITOR" ] && EDITOR="micro"
 
 [ ! -d "$webdir/blog/.drafts" ] &&
 read -erp "Initialize blog in $webdir?" ask &&
