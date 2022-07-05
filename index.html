@@ -64,6 +64,10 @@ getStylesheet();
 	width: 10px;
 }
 
+#flexbox {
+  display: flex;
+  }
+
 h4{
 	color: lightgrey;
 }
@@ -88,6 +92,7 @@ h4{
 				<div id="todo">
 
 				<!-- LB -->
+<li>2022 Jul 05 &ndash; <a href="blog/test-post.html">Test Post</a></li>
 <li>2022 Jun 30 &ndash; <a href="blog/post-jee-feels.html">Post JEE Feels</a></li>
 <li>2022 May 21 &ndash; <a href="blog/hindi-patrakaarita-ka-patan.html">Hindi Patrakaarita Ka Patan</a></li>
 <li>2022 May 12 &ndash; <a href="blog/the-only-day-your-dad-will-ever-ask-you-to-watch-tv.html">The Only Day Your Dad Will Ever Ask You To Watch TV</a></li>
@@ -100,8 +105,10 @@ h4{
   <h2>RSS Feeds</h2>
 		<li><a href="rss.xml"> Blog RSS Feed</a></li><li><a href="updates.xml">Updates RSS Feed</a> (For stuff that I might have posted on social media, but I dont use social media.))</li><strong><a href="how2rss">How do I use this <i>RSS Feed</i>?</a></strong><br>
 		<p><h4>Read more about this webpage <a href="about.html#website">here</a></h4></p>		<div id="spacer"></div>
+
 		<div id="htodo">
-		<h2> Updates <blink>🆕</blink> </h2><br><a href="updates.xml">RSS Feed</a>
+		<div><h2> Updates <blink>🆕</blink> </h2><br><a href="updates.xml">RSS Feed</a>"</div>
+
 <div id="todo">
 
 	<!-- SUP -->
@@ -190,9 +197,7 @@ h4{
 
         </div></div>
 
-    <div id="htodo"><h2> Random Musings</h2>	<br><a href="updates.xml">RSS Feed</a>
-
-
+</div><div id="htodo"><div><h2> Random Musings</h2>	<br><a href="updates.xml">RSS Feed</a></div>
 	<div id="todo">
         <!-- MU -->
 
@@ -270,7 +275,8 @@ h4{
 <script defer
 	src="https://comment.cdn.bka.li/js/commento.js"
 	data-auto-init="true""></script>
-<div id="commento"></div>
+<center><h2>Guestbook</h2></center>
+<div id="commento" style="max-width: 600px"></div><small><center><z>Powered by the kindness of <a href="https://bka.li/">bka.li</a></z></center></small>
 <blink><h2><a href="links.html#people">Cool People I Follow</a></h2></blink>
 	</main>
   </body>
