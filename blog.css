@@ -18,19 +18,7 @@ body {
 }
 
 
-a {color: khaki; }
-a:hover {color: darkkhaki; }
 h2 { padding: 10px 10px 0px 0px; margin: 0px;}
-z {color: darkturquoise; font-family: Pixellari;}
+
 a {color: royalblue; }
 a:hover {color: lightskyblue; }
-c {color: lightgray; }
-.entry {
-	border-left: 10px solid darkslategray;
-	padding: 0px 10px 0px 10px;
-	border-radius: 0 30px 30px 0;
-	margin-bottom: 20px;
-	background-color: lightblue;
-	}
-
-.entry h2 { margin: 5px auto 2px auto; font-family: Pixellari, sans-serif; }
