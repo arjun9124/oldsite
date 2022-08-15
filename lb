@@ -20,7 +20,7 @@ commento="<div style=\"max-width: 500px\"> <script defer
 	src=\"https://comment.cdn.bka.li/js/commento.js\"
 	data-auto-init=\"true\"\"></script><div id=\"commento\" style=\"max-width: 600px\"></div><small><center><z>Commento powered by the kindness of <a href=\"https://bka.li/\">bka.li</a></z></center></small></div>"
 
-[ -z "$EDITOR" ] && EDITOR="nano"
+[ -z "$EDITOR" ] && EDITOR="kate"
 
 [ ! -d "$webdir/blog/.drafts" ] &&
 read -erp "Initialize blog in $webdir?" ask &&
