@@ -12,34 +12,43 @@ html {
 
 }
 
-.header {
-
-	padding: 0.7ex 0.7ex 0.7ex 2em;
+#header {
 	text-align:  left;
-	border: dashed 2px;
-	border-color: darkgoldenrod;
-	border-radius: 30px 30px 0px 0px;
-	border-bottom-style: none;
+	padding: 1em 2em;
 	background: rgba(50,50,50,0.9);
+	border: dashed 2px ;
+	border-color: darkgoldenrod;
+	border-radius: 10px;
 }
 
+#footer{
+	margin-top: 10px;
+	text-align: center;
+	padding: 1em 2em;
+	background: rgba(50,50,50,0.9);
+	border: dashed 2px ;
+	border-color: darkgoldenrod;
+	border-radius: 10px;
 
+
+}
 
 @font-face {font-family: Pixellari; src: url("files/Pixellari.ttf"); }
 
 body {
-	font-family: sans-serif;
+	font-family: monospace;
 	/* background: linear-gradient(indigo, darkslategray) fixed ; */
 	/* background: powderblue ; */
 }
 
 main {
-	padding: 0px 10px 10px 10px;
+	margin: 10px 0px;
+	padding: 1em 2em;
 	background: rgba(50,50,50,0.9);
 	border: dashed 2px ;
 	border-color: darkgoldenrod;
-	border-top-style: none;
-	border-bottom-style: none;
+	border-radius: 10px;
+
 
 }
 
@@ -85,16 +94,7 @@ a:hover {color: khaki; }
 .bindex {
 }
 
-#footer{
-	margin-top: 10px;
-	text-align: center;
-	border: dashed 2px;
-	border-color: darkgoldenrod;
-	border-top-style: none;
-	border-radius: 0px 0px 30px 30px;
-	background: rgba(50,50,50,0.9);
 
-}
 
 
 #imz{
