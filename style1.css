@@ -55,10 +55,7 @@ a:hover {color: khaki; }
 
 
 /* Style page content */
-.main {
-	padding: 10px 10px;
-	margin: 10px 10px 10px 10px;
-}
+
 
 #todo {
 	height:200px;

@@ -14,13 +14,9 @@ html {
 
 .header {
 
-	padding: 0.7ex 0.7ex 0.7ex 2em;
+	/* padding: 0.7ex 0.7ex 0.7ex 2em; */
 	text-align:  left;
-	border: dashed 2px;
-	border-color: cadetblue;
-	border-radius: 30px 30px 0px 0px;
-	border-bottom-style: none;
-	background: rgba(50,50,50,0.9);
+
 }
 
 
@@ -28,18 +24,18 @@ html {
 @font-face {font-family: Pixellari; src: url("files/Pixellari.ttf"); }
 
 body {
-	font-family: sans-serif;
+	font-family: monospace;
 	/* background: linear-gradient(indigo, darkslategray) fixed ; */
 	/* background: powderblue ; */
 }
 
 main {
-	padding: 0px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;
 	background: rgba(50,50,50,0.9);
 	border: dashed 2px ;
 	border-color: cadetblue;
-	border-top-style: none;
-	border-bottom-style: none;
+	border-radius: 10px;
+
 
 }
 
@@ -55,10 +51,7 @@ a:hover {color: lightseagreen; }
 
 
 /* Style page content */
-.main {
-	padding: 10px 10px;
-	margin: 10px 10px 10px 10px;
-}
+
 
 #todo {
 	height:200px;
@@ -91,11 +84,7 @@ a:hover {color: lightseagreen; }
 #footer{
 	margin-top: 10px;
 	text-align: center;
-	border: dashed 2px;
-	border-color: cadetblue;
-	border-top-style: none;
-	border-radius: 0px 0px 30px 30px;
-	background: rgba(50,50,50,0.9);
+
 
 }
 
