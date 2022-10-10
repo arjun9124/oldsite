@@ -27,6 +27,8 @@ html {
 @font-face {font-family: Pixellari; src: url("files/Pixellari.ttf"); }
 
 body {
+		font-size: large;
+
 	font-family: monospace;
 	/* background: linear-gradient(indigo, darkslategray) fixed ; */
 	/* background: powderblue ; */

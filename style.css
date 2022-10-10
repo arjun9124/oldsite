@@ -19,6 +19,8 @@ html {
 
 
 body {
+		font-size: large;
+
 	font-family: monospace;
 	/* background: linear-gradient(indigo, darkslategray) fixed ; */
 	background: powderblue ;

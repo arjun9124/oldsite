@@ -26,6 +26,8 @@ function getStylesheet() {
       if (23 <= currentTime&&currentTime < 1) {
 	document.write("<link rel='stylesheet' href='style3.css' type='text/css'>");
 	}
+
+
 }
 
 getStylesheet();
@@ -35,6 +37,9 @@ getStylesheet();
 <noscript><link href="style.css" rel="stylesheet"></noscript>
 
 <style>
+ body {
+ font-size: large;
+ }
  blink {
         animation: blinker .7s linear infinite;
        }
@@ -75,23 +80,6 @@ h4{
 #red {
 color: red;}
 
-.slide {
-    animation-name: recoil !important;
-    animation-duration: 2s !important;
-    animation-iteration-count: infinite !important ;
-    animation-direction:alternate;
-
-    }
-
-@keyframes slide {
-     25% {
-            transform: translateX(10%);
-        }
-
-     75% {
-            transform: translateX(-10%);
-        }
-}
 </style>
         <title>arjun9124</title>
 
@@ -100,13 +88,43 @@ color: red;}
 
 
 
-<div class="header" ><div class="title"><h1>Arjun's Webpage</h1></div><strong><h3>welcome to my webpage</h3></strong>
+<div class="header" ><div class="title"><h1><script>
+var textArray = [
+  "Arjun's Webpage",
+  "Arjun's Webpage",
+  "Arjun's Webpage",
+  "Arjun's Webpage",
+  "Arjun's Webpage",
+  "arjuns9124.com.github.io.com @ internet.com",
+  "Arjun's Webbloat",
+  "Arjun's Webpage"
+];
+var randomNumber = Math.floor(Math.random() * textArray.length);
+document.write(textArray[randomNumber]);
+</script></h1></div>
+<h3><script>
+var textArray = [
+  "Good Morning Sirs!",
+  "welcome to my webpage",
+    "welcome to my webpage",
+  "welcome to my webpage",
+
+  "knock knock",
+  "this website could have been a lot better",
+  "bloat",
+  "The Pastor Of Muppets is pulling his strings",
+  "who's there?",
+  "there are horny panjabans in your area"
+];
+var randomNumber = Math.floor(Math.random() * textArray.length);
+document.write(textArray[randomNumber]);
+</script></h3>
 <h3>[<a href="index.html">Home</a>] [<a href="about.html">About</a>] [<a href="blog.html">Blog</a>] [<a href="projects.html">Projects</a>] [<a href="links.html">Links</a>] [<a href="tags.html">Topic Cloud</a>] [<a href="photography.html">Photography</a>] [<a href="shidposting.html">Trashposting</a>]</H3></div></div>
 
 <body>
     <main>
         <div class="main">
-<marquee direction = "left"><h1 id="red">Under Construction.Thanks for visiting.</h1></marquee>
+<marquee direction = "left"><h1 id="red">Under Construction.</h1></marquee>
 			<div id="imz" style="margin-right: 25px;"><img src="files/techarj.jpg" onmouseover="this.src='files/INTJStare.png';" onmouseout="this.src='files/techarj.jpg';" width="270ex" border-radius: 7px;><br><z><center>Technical Arjun<br><i>felt technical, might delete later</i></center></z></div>
 		<p>Hello, I am Arjun. This is my webpage. Proudly made with HTML. To know more about me, please visit <a href="about.html">About Me</a> <br> You can also view my <a href="blog.html">blog</a>.
 				<div id="vspacer"></div><div id="vspacer"></div><div id="spacer"></div>
@@ -137,6 +155,13 @@ color: red;}
 <div id="todo">
 
 	<!-- SUP -->
+
+<br><item>
+<update><strong>Back to the old webpage</strong><update>
+<p>Well, the Hugo webpage did come off great and works like a charm but its going to take me a while to deploy it to github pages. <br> Hence, coming back to the old ways.</p>
+<small><pubDate>Mon, 10 Oct 2022 09:31:53 +0530</pubDate></small>
+</item><br>
+
 
 <br><item>
 <update><strong>Bye Bye Rolling blog page</strong><update>
@@ -320,6 +345,7 @@ color: red;}
 
 </main>
   </body>
+
 <!-- FOOTER -->
 <div id="footer"><center>><br><z>Ctrl+C, Ctrl+V allowed.</z><hr><z>Copyleft 2022 Arjun9124 | Some Rights Reserved | Contact <hr> <img src="https://anlucas.neocities.org/homicide.gif"> <img src="https://anlucas.neocities.org/camtime.png"> <a href="https://anlucas.neocities.org"><img src="https://anlucas.neocities.org/anlucasbutton.gif"></a> <img src="https://anlucas.neocities.org/penguin.gif" height="31" width="88px">	<a href="https://yesterweb.org"><img src="https://yesterweb.org/img/button.png"></a> <a href="https://librewolf.net"><img src="files/librewolf.png"> <a href="https://yesterweb.org/no-to-web3/"><img src="https://auzziejay.com/images/noweb32.gif"></a></z></div>
 </center>
