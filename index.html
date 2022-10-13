@@ -8,7 +8,7 @@
 
 function getStylesheet() {
       var currentTime = new Date().getHours();
-      if (1 <= currentTime&&currentTime < 6) {
+      if (0 <= currentTime&&currentTime < 6) {
        document.write("<link rel='stylesheet' href='style3.css' type='text/css'>");
       }
       if (6 <= currentTime&&currentTime < 12) {
@@ -23,7 +23,7 @@ function getStylesheet() {
       if (20 <= currentTime&&currentTime < 23) {
        document.write("<link rel='stylesheet' href='style3.css' type='text/css'>");
       }
-      if (23 <= currentTime&&currentTime < 1) {
+      if (23 <= currentTime&&currentTime < 0) {
 	document.write("<link rel='stylesheet' href='style3.css' type='text/css'>");
 	}
 
