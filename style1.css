@@ -33,8 +33,8 @@ html {
 
 }
 
-@font-face {font-family: Pixellari; src: url("files/Pixellari.ttf"); }
 
+@font-face {font-family: ArgentPixelCF-Regular; src: url("files/ArgentPixelCF-Regular.otf"); }
 body {
 		font-size: large;
 
@@ -56,11 +56,11 @@ main {
 
 
 
-h1, h2, h3, strong {color:lightgrey; font-family: Pixellari, sans-serif; }
+h1, h2, h3, strong {color:lightgrey; font-family: ArgentPixelCF-Regular, sans-serif; }
 h2 { padding: 10px 10px 0px 0px; margin: 0px;}
 update, strong, sup {color: lightgrey; }
 li, p, ul {color: lightgrey; }
-z {color: khaki; font-family: Pixellari;}
+z {color: khaki; font-family: ArgentPixelCF-Regular;}
 a {color: darkkhaki; }
 a:hover {color: khaki; }
 

@@ -24,8 +24,8 @@ html {
 
 
 
-@font-face {font-family: Pixellari; src: url("files/Pixellari.ttf"); }
 
+@font-face {font-family: ArgentPixelCF-Regular; src: url("files/ArgentPixelCF-Regular.otf"); }
 body {
 		font-size: large;
 
