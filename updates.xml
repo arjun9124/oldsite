@@ -12,6 +12,14 @@
 <!-- SUP -->
 
 <item>
+<title>Why didn't I learn CSS Grid and Flexbox before ?</title>
+<pubDate>Fri, 21 Oct 2022 11:11:24 +0530</pubDate>
+<description><![CDATA[After months of having wonky broken div's, boxes and elements on my webpage I finally learnt CSS Grid and Flexbox. HTML's never been better. <br>Folks, better learn flexbox and grid if you dont know it. LEARN IT NOW. Its a boon to mankind.
+]]></description>
+</item>
+
+
+<item>
 <title>Second thoughts on Hugo</title>
 <pubDate>Mon, 10 Oct 2022 18:11:56 +0530</pubDate>
 <description><![CDATA[yeah hugos great and all but this html page with the bash scripts isnt bad either I dont think I'll be swithing too soon.

@@ -2,8 +2,7 @@
 
 <html lang="en">
 <head>
- 
-        <meta charset="utf-8">
+<meta charset="utf-8">
 <script>
 
 function getStylesheet() {
@@ -51,44 +50,35 @@ getStylesheet();
 
 #todo h2{margin: 5px 0px 0px 0px; padding: 0px;}
 
-#htodo {
-	float:left;
-	width: 50%;
-	height: 420px;
-	overflow: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-#spacer {
-	height: 20px;
-}
-
-#vspacer {
-	height: 200px;
-	width: 10px;
-}
-
-#flexbox {
-  display: flex;
-  }
-
-h4{
+h4 {
 	color: lightgrey;
 }
 
 #red {
 color: red;}
 
+.main {
+display: grid;
+grid-template-columns: repeat(2, 1fr) ;
+grid-template-rows: 10px, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr ;
+}
+
+.item {}
+.marquee {grid-column-start: 1; grid-column-end: 3;}
+.intro {grid-column-start: 1; grid-column-end: 3;}
+.posts {grid-column-start: 1; grid-column-end: 3;}
+.rss {grid-column-start: 1; grid-column-end: 3;}
+.contact {grid-column-start: 1; grid-column-end: 3;}
+.cool {grid-column-start: 1; grid-column-end: 3;}
+
+
 </style>
         <title>arjun9124</title>
 
 </head>
-
-
-
-
-<div class="header" ><div class="title"><h1><script>
+<div class="header">
+<div class="title"><h1>
+<script>
 var textArray = [
   "Arjun's Webpage",
   "Arjun's Webpage",
@@ -104,35 +94,32 @@ document.write(textArray[randomNumber]);
 </script></h1></div>
 <h3><script>
 var textArray = [
-  "Good Morning Sirs!",
+  "Make yourself comfortable",
   "welcome to my webpage",
-    "welcome to my webpage",
   "welcome to my webpage",
-
+  "welcome to my webpage",
+  "We need some background music",
   "knock knock",
   "this website could have been a lot better",
   "bloat",
-  "The Pastor Of Muppets is pulling his strings",
-  "who's there?",
-  "there are horny panjabans in your area"
+  "who's there?"
+
 ];
 var randomNumber = Math.floor(Math.random() * textArray.length);
 document.write(textArray[randomNumber]);
 </script></h3>
-<h3>[<a href="index.html">Home</a>] [<a href="about.html">About</a>] [<a href="blog.html">Blog</a>] [<a href="projects.html">Projects</a>] [<a href="links.html">Links</a>] [<a href="tags.html">Topic Cloud</a>] [<a href="photography.html">Photography</a>] [<a href="shidposting.html">Trashposting</a>]</H3></div></div>
-
+<h3>[<a href="index.html">Home</a>] [<a href="about.html">About</a>] [<a href="blog.html">Blog</a>] [<a href="projects.html">Projects</a>] [<a href="links.html">Links</a>] [<a href="tags.html">Topic Cloud</a>] [<a href="photography.html">Photography</a>] [<a href="shidposting.html">Trashposting</a>]</H3>
+</div>
 <body>
     <main>
         <div class="main">
-<marquee direction = "left" width="70%"><h1 id="red">Under Construction.</h1></marquee>
-			<div id="imz" style="margin-right: 25px;"><img src="files/techarj.jpg" onmouseover="this.src='files/INTJStare.png';" onmouseout="this.src='files/techarj.jpg';" width="270ex" border-radius: 7px;><br><z><center>Technical Arjun<br><i>felt technical, might delete later</i></center></z></div>
-		<p>Hello, I am Arjun. This is my webpage. Proudly made with HTML. To know more about me, please visit <a href="about.html">About Me</a> <br> You can also view my <a href="blog.html">blog</a>.
-				<div id="vspacer"></div><div id="vspacer"></div><div id="spacer"></div>
+        <div class="item marquee"><marquee direction = "left"><h1 id="red">Under Construction.</h1></marquee></div>
+        <div class="item intro"><div id="imz" style="margin-right: 25px;"><img src="files/techarj.jpg" onmouseover="this.src='files/INTJStare.png';" onmouseout="this.src='files/techarj.jpg';" width="270ex" border-radius: 7px;><br><z><center>Technical Arjun<br><i>felt technical, might delete later</i></center></z></div>
+        <p>Hello, I am Arjun. This is my webpage. Proudly made with HTML. To know more about me, please visit <a href="about.html">About Me</a> <br> You can also view my <a href="blog.html">blog</a>.</div>
 
-		
-<div id="boxes">
-                <h2> Recent Posts</h2>
-				<div id="todo">
+		<div class="item posts">
+            <h2> Recent Posts</h2>
+              <div id="todo">
 
 				<!-- LB -->
 <li>2022 Oct 09 &ndash; <a href="blog/parantha-tier-list.html">Parantha Teir List</a></li>
@@ -142,19 +129,26 @@ document.write(textArray[randomNumber]);
 <li>2022 May 09 &ndash; <a href="blog/birdwatching-at-a-local-park-2015.html">Birdwatching At A Local Park: 2015</a></li>
 <li>2022 May 05 &ndash; <a href="blog/blog-up-and-running.html">Blog Up And Running</a></li>
 
-				</div>
+              </div>
+        </div>
 
-				<div id="spacer"></div>
-  <h2>RSS Feeds</h2>
-		<li><a href="rss.xml"> Blog RSS Feed</a></li><li><a href="updates.xml">Updates RSS Feed</a></li><strong><a href="how2rss">How do I use this <i>RSS Feed</i>?</a></strong><br>
-		<p><h4>Read more about this webpage <a href="about.html#website">here</a></h4></p>		<div id="spacer"></div>
-
-		<div id="htodo">
+      <div class="item rss">
+        <h2>RSS Feeds</h2>
+          <li><a href="rss.xml"> Blog RSS Feed</a></li><li><a href="updates.xml">Updates RSS Feed</a></li><strong><a href="how2rss">How do I use this <i>RSS Feed</i>?</a></strong><br>
+          <p><h4>Read more about this webpage <a href="about.html#website">here</a></h4></p>
+      </div>
+      <div class="item SUP">
 		<div><h2> Updates <blink>🆕</blink> </h2><br><a href="updates.xml">RSS Feed</a>"</div>
-
-<div id="todo">
+          <div id="todo">
 
 	<!-- SUP -->
+
+<br><item>
+<update><strong>Why didn't I learn CSS Grid and Flexbox before ?</strong><update>
+<p>After months of having wonky broken div's, boxes and elements on my webpage I finally learnt CSS Grid and Flexbox. HTML's never been better. <br>Folks, better learn flexbox and grid if you dont know it. LEARN IT NOW. Its a boon to mankind.</p>
+<small><pubDate>Fri, 21 Oct 2022 11:11:24 +0530</pubDate></small>
+</item><br>
+
 
 <br><item>
 <update><strong>Second thoughts on Hugo</strong><update>
@@ -259,11 +253,16 @@ document.write(textArray[randomNumber]);
 <pubDate><sup>Sun, 10 Apr 2022 11:28:15 +0530</sup></pubDate>
 </item>
 
-        </div></div>
+        </div>
+      </div>
 
-</div><div id="htodo"><div><h2> Random Musings</h2>	<br><a href="updates.xml">RSS Feed</a></div>
-	<div id="todo">
-        <!-- MU -->
+
+
+      <div class="item MU">
+      <div><h2> Random Musings</h2><br><a href="updates.xml">RSS Feed</a></div>
+        <div id="todo">
+
+          <!-- MU -->
 
 <br><item>
 <update><strong>What 'masturbation is to sex' is what 'memes are to comedy'</strong><update>
@@ -326,36 +325,40 @@ document.write(textArray[randomNumber]);
 </item><br>
 
 
-              </div></div>
-
-                <div id="vspacer"></div><div id="svspacer" style="height: 140px;"></div>
-
+        </div>
+      </div>
 
 
-
-<br> </div>
-<div id="spacer"></div>
-<h2>Contact</h2>
+<div class="item contact"><h2>Contact</h2>
 <ul><strong>E-Mail 📧 </strong>:  (very very real)</ul>
 <ul><strong>Matrix 🕸  </strong>: @neoinamatrix:matrix.org</ul>
 <ul><strong>Github</strong>: <a href="https://www.github.com/arjun9124">arjun9124</a></ul>
-<center><h2>Think that I'm cool ?</h2>
-<div id="box" style="height: 100px; max-height: 200px;  width: 200px; border: dashed 2px; border-color: cyan; border-radius: 7px; padding-bottom: 20px; margin-top: 20px;"><h3>My Webpin:</h3><img src="files/webpin.gif"> <br><div id="spacer"></div></center></div>
-<div id="spacer">
 </div>
-<script defer
-	src="https://comment.cdn.bka.li/js/commento.js"
-	data-auto-init="true""></script>
-<center><h2>Guestbook</h2></center>
-<center><div id="commento" style="max-width: 600px; background-color: rgba(50,50,50,0.9); border: dashed 2px; border-color: cyan; border-radius: 7px;"></div><small><center><z>Powered by the kindness of <a href="https://bka.li/">bka.li</a></z></center></small></center>
-<blink><h2><a href="links.html#people">Cool People I Follow</a></h2></blink>
+<div class="item cool">
+<center><h2>Think that I'm cool ?</h2></center>
 
+
+<center><div style="height: 100px; max-height: 200px;  width: 200px; border: dashed 2px; border-color: cyan; border-radius: 7px; padding-bottom: 20px; margin-top: 20px;"><h3>My Webpin:</h3><img src="files/webpin.gif"></center></div>
+</div>
+<center><blink><h2><a href="links.html#people">Cool People I Follow</a></h2></blink></center>
+
+</div>
+
+<!-- <script defer
+	src="https://comment.cdn.bka.li/js/commento.js"
+	data-auto-init="true""></script> -->
+<div class="item">
+<center><h2>Guestbook</h2></center>
+<center><div id="commento" style="max-width: 600px; background-color: rgba(50,50,50,0.9); border: dashed 2px; border-color: cyan; border-radius: 7px;"></div><small><center><z>Powered by the kindness of <a href="https://bka.li/">bka.li</a></z></center></small></center><br>
+<div align=center><a href='https://www.counter12.com'><z>This webpage has been visited <img src='https://www.counter12.com/img-4Da91ac3A6C872cx-3.gif' border='0' alt='conter12'> times</z></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=4Da91ac3A6C872cx'></script></div>
+
+</div>
+</div>
 </main>
   </body>
 
 <!-- FOOTER -->
 <div id="footer"><center>><br><z>Ctrl+C, Ctrl+V allowed.</z><hr><z>Copyleft 2022 Arjun9124 | Some Rights Reserved | Contact <hr> <img src="https://anlucas.neocities.org/homicide.gif"> <img src="https://anlucas.neocities.org/camtime.png"> <a href="https://anlucas.neocities.org"><img src="https://anlucas.neocities.org/anlucasbutton.gif"></a> <img src="https://anlucas.neocities.org/penguin.gif" height="31" width="88px">	<a href="https://yesterweb.org"><img src="https://yesterweb.org/img/button.png"></a> <a href="https://librewolf.net"><img src="files/librewolf.png"> <a href="https://yesterweb.org/no-to-web3/"><img src="https://auzziejay.com/images/noweb32.gif"></a></z></div>
-<div align=center><a href='https://www.counter12.com'><img src='https://www.counter12.com/img-4Da91ac3A6C872cx-3.gif' border='0' alt='conter12'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=4Da91ac3A6C872cx'></script></div>
 </center>
 
 </html>
