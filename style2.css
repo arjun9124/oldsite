@@ -48,11 +48,11 @@ main {
 
 
 
-h1, h2, h3, strong {color:lightgrey; font-family: Pixellari, sans-serif; }
+h1, h2, h3, strong {color:lightgrey; font-family: ArgentPixelCF-Regular, sans-serif; }
 h2 { padding: 10px 10px 0px 0px; margin: 0px;}
 update, strong, sup {color: lightgrey; }
 li, p, ul {color: lightgrey; }
-z {color: magenta; font-family: Pixellari;}
+z {color: magenta; font-family: ArgentPixelCF-Regular;}
 a {color: magenta; }
 a:hover {color: darkmagenta; }
 strong {margin: 0px; padding: px;}
