@@ -1,8 +1,6 @@
-# Arjun's Minimalist Webpage
+# Arjun's Webpage
 
-Minimilast webpage, made completley in HTML and CSS.
+My personal Webpage, a creative outlet.
+```  ```
 
-``` Powered by Luke Smith's lb and sup. ```
-
-Crtl+C, Ctrl+V allowed.
 
