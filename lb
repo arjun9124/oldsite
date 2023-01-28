@@ -8,6 +8,8 @@
 #          _/ |                                                                          
 #         |__/
 #28-01-2023 08:06 formerly pb untill the end of line sequence was fudged. 
+
+
 name="Arjun"
 webdir="$PWD"
 website="https://arjun9124.github.io/" # Keep a trailing slash.
@@ -16,6 +18,7 @@ indexfile="blog.html"
 tagfile="tags.html"
 rssfile="rss.xml"
 homepage="index.html"
+blogfile="rollingblog.html"
 archivefile="$webdir/blog/.htaccess"
 commento="<div style=\"max-width: 500px\"> <script defer
 	src=\"https://comment.cdn.bka.li/js/commento.js\"
@@ -55,8 +58,6 @@ listandReturn() {
 
 publish() { \
 	delete draft
-	read -erp "File To Write To:
-		" blogfile
 	htaccessentry=$(grep "$basefile" "$archivefile")
 	realname="$(echo "$htaccessentry" | cut -d'"' -f2)"
 	rssdate="$(grep "$basefile" blog/.htaccess | sed "s/.*\.html\"* *#*//g" | tr -d '\n')"
@@ -92,8 +93,6 @@ publish() { \
 confirm() { read -erp "Really $1 \"$base\"? (y/N) " choice && echo "$choice" | grep -qi "^y$" || exit 1 ;}
 
 delete() { \
-	read -erp "Blogfile:
-		" blogfile
 	sed -i "/<item/{:a;N;/<\\/item>/!ba};/#$base<\\/guid/d" "$rssfile"
 	sed -i "/<div class='entry'>/{:a;N;/<\\/div>/!ba};/id='$base'/d" "$blogfile"
 	sed -i "/<li>.*<a href=\"blog\\/$base.html\">/d" "$indexfile"
