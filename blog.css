@@ -1,25 +1,24 @@
  
 html {
-	max-width: 1500px;
+	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 30px;
 	color: #333;
-	padding-bottom: 200px;
-	background: powderblue;
+	background: mintcream;
+
 
 }
 
 body {
-	font-family: sans-serif;
+	font-family: monospace;
+	font-size: large;
 	margin-bottom: 100px ;
 	padding: 20px;
 
 }
 
-
-h2 { padding: 10px 10px 0px 0px; margin: 0px;}
-
+h1,h2 { padding: 10px 10px 0px 0px; margin: 0px; color:darkslategray}
 a {color: royalblue; }
 a:hover {color: lightskyblue; }
-c { padding: 1em; color: darkslategray; position: center; font-weight: bold;}
+c { padding: 1em; color: teal; position: center; font-weight: bold;}

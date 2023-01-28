@@ -12,19 +12,20 @@
 
 echo Arjuns modified, mutilated, frankensien sup.
 
-read -erp "Filename to write to:
-    " updatefile
-read -erp "Secondary file (optional):
-    " update2file
 read -erp "Update Title:
     " update
 read -erp "Update Content:
     " content
-read -erp "Marker (format <!-- mark -->) :
+
+read -erp "Filename to write to (index.html usually): 
+    " updatefile
+read -erp "Secondary file (links.html):
+    " update2file
+read -erp "Marker (format <!-- mark -->, <!-- SUP -->) : 
     " marker
 read -erp "Secondary Marker (optional):
     " mark2er
-read -erp "RSS file:
+read -erp "RSS file: 
     " rss
 
 # You will want to change these variables to your needs.
