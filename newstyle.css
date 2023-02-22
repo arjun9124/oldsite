@@ -1,0 +1,110 @@
+html {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	color: #333;
+	background-image: url("files/bg.gif");
+  background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
+	background-size: cover;
+
+}
+
+.header{
+	text-align:  left;
+	padding: 1em 2em;
+	background: rgba(50,50,50,0.9);
+	border: dashed 2px ;
+	border-color: fuchsia;
+	border-radius: 10px;
+}
+
+#footer{
+	margin-top: 10px;
+	text-align: center;
+	padding: 1em 2em;
+	background: rgba(50,50,50,0.9);
+	border: dashed 2px ;
+	border-color: fuchsia;
+	border-radius: 10px;
+
+
+}
+
+
+@font-face {font-family: ArgentPixelCF-Regular; src: url("files/ArgentPixelCF-Regular.otf"); }
+body {
+		font-size: large;
+
+	font-family: monospace;
+	/* background: linear-gradient(indigo, darkslategray) fixed ; */
+	/* background: powderblue ; */
+}
+
+main {
+	margin: 10px 0px;
+	padding: 1em 2em;
+	background: rgba(50,50,50,0.9);
+	border: dashed 2px ;
+	border-color: fuchsia;
+	border-radius: 10px;
+
+
+}
+
+
+
+h1, h2, h3, strong {color:lightgrey; font-family: ArgentPixelCF-Regular, sans-serif; }
+h2 { padding: 10px 10px 0px 0px; margin: 0px;}
+update, strong, sup {color: lightgrey; }
+li, p, ul {color: lightgrey; }
+z {color: aquamarine; font-family: ArgentPixelCF-Regular;}
+a {color: mediumaquamarine; }
+a:hover {color: aquamarine; }
+
+
+/* Style page content */
+
+
+#todo {
+	height:200px;
+
+	overflow: auto;
+	border: dashed 2px;
+	border-color: hotpink;
+	border-radius: 7px;
+	padding: 1.5em;
+	margin: 20px 10px 10px 10px;
+}
+
+/* ENTRY CSS */
+.entry {
+	border-left: 10px solid darkslategray;
+	padding: 0px 10px 0px 10px;
+	border-radius: 0 30px 30px 0;
+	margin-bottom: 20px;
+	background-color: lightblue;
+	}
+
+.entry h2 { margin: 5px auto 2px auto; color: #222222; padding: 10px 10px 0px 0px;}
+.entry a {color: midnightblue;}
+.entry a:hover {color: turquoise;}
+.entry strong {color:black;}
+
+.bindex {
+}
+
+
+
+
+#imz{
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	border: dashed 2px;
+	border-color: hotpink;
+	border-radius: 7px;
+}
+/*  */
